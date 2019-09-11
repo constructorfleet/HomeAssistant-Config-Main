@@ -1,0 +1,7 @@
+host: !secret appliances_server_host
+port: !secret appliances_server_port
+secure: false
+access_token: !secret appliances_server_token
+subscribe_events:
+  - state_changed
+  - service_registered

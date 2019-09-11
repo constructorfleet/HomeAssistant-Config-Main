@@ -1,0 +1,7 @@
+host: !secret media_server_host
+port: !secret media_server_port
+secure: false
+access_token: !secret media_server_token
+subscribe_events:
+  - state_changed
+  - service_registered

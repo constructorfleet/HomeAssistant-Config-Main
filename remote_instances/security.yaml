@@ -1,0 +1,7 @@
+host: !secret security_server_host
+port: !secret security_server_port
+secure: false
+access_token: !secret security_server_token
+subscribe_events:
+  - state_changed
+  - service_registered

@@ -1,0 +1,7 @@
+host: !secret hub_server_host
+port: !secret hub_server_port
+secure: false
+access_token: !secret hub_server_token
+subscribe_events:
+  - state_changed
+  - service_registered
