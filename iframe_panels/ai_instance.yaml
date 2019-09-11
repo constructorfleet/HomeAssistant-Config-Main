@@ -1,0 +1,4 @@
+title: AI
+url: !secret ai_instance_host
+icon: mdi:home-automation
+require_admin: true

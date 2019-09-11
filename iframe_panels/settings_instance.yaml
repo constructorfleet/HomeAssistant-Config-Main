@@ -1,0 +1,4 @@
+title: Settings
+url: !secret settings_instance_host
+icon: mdi:settings
+require_admin: true

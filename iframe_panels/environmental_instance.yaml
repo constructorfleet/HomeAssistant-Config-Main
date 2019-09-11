@@ -1,0 +1,4 @@
+title: Environmental
+url: !secret environmental_instance_host
+icon: mdi:cloud-braces
+require_admin: true

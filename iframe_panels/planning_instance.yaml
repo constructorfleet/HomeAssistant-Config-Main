@@ -1,0 +1,4 @@
+title: Planning
+url: !secret planning_instance_host
+icon: mdi:calendar
+require_admin: true

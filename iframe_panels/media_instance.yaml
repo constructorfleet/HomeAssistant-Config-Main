@@ -1,0 +1,4 @@
+title: Media
+url: !secret media_instance_host
+icon: mdi:play-network
+require_admin: true

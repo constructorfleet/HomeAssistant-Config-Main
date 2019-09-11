@@ -1,0 +1,4 @@
+title: Hubs
+url: !secret hub_instance_host
+icon: mdi:hubspot
+require_admin: true
