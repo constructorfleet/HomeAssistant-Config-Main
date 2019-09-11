@@ -1,0 +1,34 @@
+# Main Stuff #
+accent-color: "#00c5ff"
+primary-color: "#ffffff" # Primary (most of the UI)
+#primary-color: "#00c5ff" # Primary (most of the UI)
+primary-background-color: "#060606" # Primary background colour (dialogs, e.t.c)
+secondary-background-color: "#060606" # Secondary background colour (main UI background)
+paper-card-background-color: "#131313" # Card background colour
+paper-item-icon-color: "#cccccc" # Icon colour
+primary-text-color: "#f68900" # Primary text colour
+secondary-text-color: "#00c5ff" # Secondary text colour
+disabled-text-color: "#00c5ff" # Disabled text colour
+divider-color: "#cccccc"
+paper-card-header-color: "#cccccc" # Card header text colour
+
+# Nav Menu #
+paper-listbox-background-color: "#131313" # Listbox background colour
+paper-listbox-color: "#cccccc" # Listbox text colour
+paper-grey-200: "#060606" # Listbox selected item background colour
+
+# Switches #
+paper-toggle-button-checked-ink-color: "#d80129"
+paper-toggle-button-checked-button-color: "#cccccc"
+paper-toggle-button-checked-bar-color: "#cccccc"
+
+# Sliders #
+paper-slider-knob-color: "#cccccc"
+paper-slider-knob-start-color: "#cccccc"
+paper-slider-pin-color: "#cccccc"
+paper-slider-active-color: "#cccccc"
+paper-slider-secondary-color: "#cccccc"
+
+# Tables #
+table-row-background-color: "#ffffff"
+table-row-alternative-background-color: transparant
