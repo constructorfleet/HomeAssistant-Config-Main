@@ -1,8 +1,8 @@
-latitude: !secret latitude
-longitude: !secret longitude
-elevation: !secret elevation
+latitude: !secret home_latitude
+longitude: !secret home_longitude
+elevation: !secret home_elevation
 unit_system: imperial
-time_zone: !secret time_zone
+time_zone: !secret home_timezone
 name: Main
 auth_providers:
   - type: homeassistant
