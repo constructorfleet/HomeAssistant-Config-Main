@@ -5,3 +5,6 @@ http:
 
 frontend:
 
+recorder: !include recorder.yaml
+
+influxdb: !include influx.yaml
