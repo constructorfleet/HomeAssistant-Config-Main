@@ -1,4 +1,17 @@
-homeassistant: !include core.yaml
+homeassistant:
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: imperial
+  time_zone: !secret home_timezone
+  name: Main
+  auth_providers:
+    - type: homeassistant
+    - type: command_line
+      name: LDAP
+      command: /config/ldap-auth.sh
+      args: ["/config/ldap-auth.cfg"]
+      meta: True
 
 http:
   server_port: !secret main_server_port
