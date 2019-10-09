@@ -13,9 +13,6 @@ homeassistant:
       args: ["/config/ldap-auth.cfg"]
       meta: True
 
-http:
-  server_port: !secret main_server_port
-
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
