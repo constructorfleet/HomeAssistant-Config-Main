@@ -1,4 +1,3 @@
 title: Communications
 url: !secret communication_server_uri
 icon: mdi:mailbox
-require_admin: true
