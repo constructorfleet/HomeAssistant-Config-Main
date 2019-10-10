@@ -22,3 +22,5 @@ panel_iframe: !include_dir_named iframe_panels
 recorder: !include recorder.yaml
 
 influxdb: !include influx.yaml
+
+remote_instances: !include_dir_list remote_instances
