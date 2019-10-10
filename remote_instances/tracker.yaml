@@ -1,4 +1,4 @@
-host: host.docker.internal
+host: !secret tracker_server_host
 port: !secret tracker_server_port
 secure: false
 access_token: !secret tracker_server_token

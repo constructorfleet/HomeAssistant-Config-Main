@@ -1,4 +1,4 @@
-host: host.docker.internal
+host: !secret communication_server_host
 port: !secret communication_server_port
 secure: false
 access_token: !secret communication_server_token

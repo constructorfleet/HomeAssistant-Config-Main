@@ -1,4 +1,4 @@
-host: host.docker.internal
+host: !secret appliances_server_host
 port: !secret appliances_server_port
 secure: false
 access_token: !secret appliances_server_token
