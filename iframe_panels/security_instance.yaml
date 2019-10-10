@@ -1,4 +1,4 @@
 title: Security
-url: !secret security_instance_host
+url: !secret security_server_uri
 icon: mdi:shield-home
 require_admin: true

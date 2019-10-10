@@ -1,4 +1,4 @@
 title: Planning
-url: !secret planning_instance_host
+url: !secret planning_server_uri
 icon: mdi:calendar
 require_admin: true

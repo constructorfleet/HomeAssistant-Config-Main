@@ -1,4 +1,4 @@
 title: Media
-url: !secret media_instance_host
+url: !secret media_server_uri
 icon: mdi:play-network
 require_admin: true

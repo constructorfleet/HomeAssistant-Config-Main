@@ -1,4 +1,4 @@
 title: Tracker
-url: !secret tracker_instance_host
+url: !secret tracker_server_uri
 icon: mdi:crosshairs-gps
 require_admin: true

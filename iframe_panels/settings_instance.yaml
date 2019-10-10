@@ -1,4 +1,4 @@
 title: Settings
-url: !secret settings_instance_host
+url: !secret settings_server_uri
 icon: mdi:settings
 require_admin: true

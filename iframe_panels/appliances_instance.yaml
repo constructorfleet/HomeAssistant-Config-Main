@@ -1,4 +1,4 @@
 title: Appliances
-url: !secret appliances_instance_host
+url: !secret appliances_server_uri
 icon: mdi:robot-vacuum-variant
 require_admin: true
