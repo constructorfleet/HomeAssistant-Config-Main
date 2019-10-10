@@ -1,4 +1,4 @@
-host: !secret hub_server_host
+host: host.docker.internal
 port: !secret hub_server_port
 secure: false
 access_token: !secret hub_server_token

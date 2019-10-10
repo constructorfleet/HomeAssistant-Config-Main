@@ -1,7 +1,7 @@
 host: !secret ai_server_host
 port: !secret ai_server_port
 secure: false
-access_token: !secret ai_server_uri
+access_token: !secret ai_server_token
 subscribe_events:
   - state_changed
   - service_registered

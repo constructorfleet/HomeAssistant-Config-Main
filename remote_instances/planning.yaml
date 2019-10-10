@@ -1,4 +1,4 @@
-host: !secret planning_server_host
+host: host.docker.internal
 port: !secret planning_server_port
 secure: false
 access_token: !secret planning_server_token

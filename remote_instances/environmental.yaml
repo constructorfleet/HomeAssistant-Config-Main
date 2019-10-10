@@ -1,4 +1,4 @@
-host: !secret environmental_server_host
+host: host.docker.internal
 port: !secret environmental_server_port
 secure: false
 access_token: !secret environmental_server_token
