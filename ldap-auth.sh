@@ -30,8 +30,9 @@ ldap_auth_curl() {
 ldap_auth_ldapsearch() {
 	if [ $(dpkg-query -l | grep ldap-utils | wc -l) -eq 0 ];
 	then \
-		apt-get update; \
-		apt-get install -y ldap-utils; \
+        echo "Installing LDAP Utilities"
+		apt-get update;
+		apt-get install -y ldap-utils;
 	fi
 	common_opts="-o nettimeout=$TIMEOUT -H $SERVER -x"
 	[ -z "$DEBUG" ] || common_opts="-v $common_opts"
