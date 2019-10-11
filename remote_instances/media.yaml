@@ -1,3 +1,4 @@
+name: Media
 host: !secret media_server_host
 port: !secret media_server_port
 secure: false

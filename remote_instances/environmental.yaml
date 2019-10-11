@@ -1,3 +1,4 @@
+name: Environmental
 host: !secret environmental_server_host
 port: !secret environmental_server_port
 secure: false

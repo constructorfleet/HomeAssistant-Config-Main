@@ -1,3 +1,4 @@
+name: Appliances
 host: !secret appliances_server_host
 port: !secret appliances_server_port
 secure: false

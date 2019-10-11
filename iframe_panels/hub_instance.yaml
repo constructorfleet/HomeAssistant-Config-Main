@@ -1,3 +1,4 @@
 title: Hubs
 url: !secret hub_server_uri
 icon: mdi:hubspot
+require_admin: true

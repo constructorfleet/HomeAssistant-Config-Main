@@ -1,3 +1,4 @@
+name: Hubs
 host: !secret hub_server_host
 port: !secret hub_server_port
 secure: false

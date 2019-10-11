@@ -1,3 +1,4 @@
+name: Security
 host: !secret security_server_host
 port: !secret security_server_port
 secure: false
