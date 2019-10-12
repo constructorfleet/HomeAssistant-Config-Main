@@ -1,6 +1,6 @@
 name: Planning
 host: !secret planning_server_host
-port: !secret planning_server_port
+port: !secret planning_server_private_port
 secure: false
 access_token: !secret planning_server_token
 subscribe_events:

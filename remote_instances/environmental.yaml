@@ -1,6 +1,6 @@
 name: Environmental
 host: !secret environmental_server_host
-port: !secret environmental_server_port
+port: !secret environmental_server_private_port
 secure: false
 access_token: !secret environmental_server_token
 subscribe_events:

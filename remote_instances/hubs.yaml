@@ -1,6 +1,6 @@
 name: Hubs
 host: !secret hubs_server_host
-port: !secret hubs_server_port
+port: !secret hubs_server_private_port
 secure: false
 access_token: !secret hubs_server_token
 subscribe_events:

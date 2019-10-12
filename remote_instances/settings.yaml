@@ -1,6 +1,6 @@
 name: Settings
 host: !secret settings_server_host
-port: !secret settings_server_port
+port: !secret settings_server_private_port
 secure: false
 access_token: !secret settings_server_token
 subscribe_events:
