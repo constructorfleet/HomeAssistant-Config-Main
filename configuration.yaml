@@ -25,3 +25,8 @@ influxdb: !include influx_db.yaml
 
 remote_homeassistant:
   instances: !include_dir_list remote_instances
+
+logger:
+  default: info
+  logs:
+    homeassistant.components.remote_homeassistant: debug
