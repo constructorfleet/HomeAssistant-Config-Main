@@ -6,3 +6,4 @@ secrets.yaml
 home-assistant.log
 .HA_VERSION
 __pycache__/
+ldap-auth.cfg
