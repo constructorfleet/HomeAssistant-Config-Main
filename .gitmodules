@@ -1,3 +1,0 @@
-[submodule "custom_components/remote_homeassistant"]
-	path = custom_components/remote_homeassistant
-	url = https://github.com/constructorfleet/HomeAssistant-Component-RemoteInstance.git
