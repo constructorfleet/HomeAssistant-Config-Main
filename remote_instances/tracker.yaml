@@ -1,4 +1,3 @@
-name: Tracker
 host: !secret tracker_server_host
 port: !secret tracker_server_private_port
 secure: false

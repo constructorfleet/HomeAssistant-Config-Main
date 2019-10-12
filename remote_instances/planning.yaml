@@ -1,4 +1,3 @@
-name: Planning
 host: !secret planning_server_host
 port: !secret planning_server_private_port
 secure: false

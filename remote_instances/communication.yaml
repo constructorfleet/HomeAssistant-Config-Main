@@ -1,4 +1,3 @@
-name: Communication
 host: !secret communication_server_host
 port: !secret communication_server_private_port
 secure: false
