@@ -1,3 +1,3 @@
 title: Hubs
-url: !secret hub_server_uri
+url: !secret hubs_server_uri
 icon: mdi:hubspot

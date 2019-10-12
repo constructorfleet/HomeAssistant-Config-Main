@@ -1,8 +1,8 @@
 name: Hubs
-host: !secret hub_server_host
-port: !secret hub_server_port
+host: !secret hubs_server_host
+port: !secret hubs_server_port
 secure: false
-access_token: !secret hub_server_token
+access_token: !secret hubs_server_token
 subscribe_events:
   - state_changed
   - service_registered
