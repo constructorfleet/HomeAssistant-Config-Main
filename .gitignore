@@ -20,3 +20,4 @@ google_calendars.yaml
 icloud/
 
 ldap-auth.cfg
+known_devices.yaml
