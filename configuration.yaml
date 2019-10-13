@@ -7,6 +7,9 @@ homeassistant:
   name: Heart of Gold
   auth_providers:
     - type: homeassistant
+    - type: trusted_networks
+      trusted_networks:
+        - 172.31.0.0/16
     - type: command_line
       name: LDAP
       command: /config/ldap-auth.sh
