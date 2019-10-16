@@ -9,7 +9,8 @@ homeassistant:
     - type: homeassistant
     - type: trusted_networks
       trusted_networks:
-        - 172.31.0.0/16
+        - 172.19.0.0/16
+        - 10.0.12.0/24
     - type: command_line
       name: LDAP
       command: /config/ldap-auth.sh
