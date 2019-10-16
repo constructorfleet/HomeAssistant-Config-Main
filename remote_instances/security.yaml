@@ -3,5 +3,6 @@ port: !secret security_server_private_port
 secure: false
 access_token: !secret security_server_token
 subscribe_events:
+  - route_registered
   - state_changed
   - service_registered
