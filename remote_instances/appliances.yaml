@@ -1,5 +1,5 @@
 host: !secret appliances_server_host
-port: !secret appliances_server_private_port
+port: !secret appliances_server_public_port
 secure: false
 access_token: !secret appliances_server_token
 subscribe_events:

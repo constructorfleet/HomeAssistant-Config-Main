@@ -1,5 +1,5 @@
 host: !secret communication_server_host
-port: !secret communication_server_private_port
+port: !secret communication_server_public_port
 secure: false
 access_token: !secret communication_server_token
 subscribe_events:

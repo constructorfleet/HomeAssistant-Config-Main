@@ -1,5 +1,5 @@
 host: !secret security_server_host
-port: !secret security_server_private_port
+port: !secret security_server_public_port
 secure: false
 access_token: !secret security_server_token
 subscribe_events:

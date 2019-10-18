@@ -1,5 +1,5 @@
 host: !secret environmental_server_host
-port: !secret environmental_server_private_port
+port: !secret environmental_server_public_port
 secure: false
 access_token: !secret environmental_server_token
 subscribe_events:
