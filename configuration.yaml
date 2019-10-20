@@ -23,6 +23,14 @@ frontend:
 
 config:
 
+camera:
+
+media_player:
+
+device_tracker:
+
+person:
+
 http:
   base_url: https://automation.prettybaked.com
   server_port: 8123
