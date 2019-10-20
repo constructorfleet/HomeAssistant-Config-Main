@@ -2,7 +2,7 @@ host: !secret planning_server_host
 port: !secret planning_server_public_port
 secure: false
 access_token: !secret planning_server_token
-subscribe_events:
+subscribe_to:
   - route_registered
   - state_changed
   - service_registered
