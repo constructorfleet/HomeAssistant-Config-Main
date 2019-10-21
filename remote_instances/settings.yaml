@@ -1,3 +1,4 @@
+name: settings
 host: !secret settings_server_host
 port: !secret settings_server_public_port
 secure: false
