@@ -3,6 +3,10 @@ host: !secret planning_server_host
 port: !secret planning_server_public_port
 secure: false
 access_token: !secret planning_server_token
+proxy_api: true
+proxy_compoents:
+  - calendar
+  - wunderlist
 subscribe_to:
   - route_registered
   - state_changed

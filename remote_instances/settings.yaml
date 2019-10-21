@@ -3,6 +3,7 @@ host: !secret settings_server_host
 port: !secret settings_server_public_port
 secure: false
 access_token: !secret settings_server_token
+proxy_api: false
 subscribe_to:
   - route_registered
   - state_changed

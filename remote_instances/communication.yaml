@@ -3,6 +3,10 @@ host: !secret communication_server_host
 port: !secret communication_server_public_port
 secure: false
 access_token: !secret communication_server_token
+proxy_api: true
+proxy_components:
+  - ios
+  - html5
 subscribe_to:
   - route_registered
   - state_changed

@@ -3,6 +3,13 @@ host: !secret media_server_host
 port: !secret media_server_public_port
 secure: false
 access_token: !secret media_server_token
+proxy_api: true
+proxy_components:
+  - spotify
+  - media_player
+  - apple_tv
+  - cast
+  - remote
 subscribe_to:
   - route_registered
   - state_changed
