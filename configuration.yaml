@@ -8,9 +8,6 @@ homeassistant:
   customize: !include customize.yaml
   auth_providers:
     - type: homeassistant
-    - type: trusted_networks
-      trusted_networks:
-        - 172.19.0.0/16
     - type: command_line
       name: LDAP
       command: /config/ldap-auth.sh
@@ -20,6 +17,8 @@ homeassistant:
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
+  extra_js_url_es5:
+    - https://github.com/Georgegriff/query-selector-shadow-dom/blob/master/src/querySelectorDeep.js
 
 config:
 
