@@ -1,4 +1,4 @@
-name: security
+# name: security
 host: !secret security_server_host
 port: !secret security_server_public_port
 secure: false

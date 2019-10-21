@@ -1,4 +1,4 @@
-name: media
+# name: media
 host: !secret media_server_host
 port: !secret media_server_public_port
 secure: false

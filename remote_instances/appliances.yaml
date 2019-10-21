@@ -1,4 +1,4 @@
-name: appliances
+# name: appliances
 host: !secret appliances_server_host
 port: !secret appliances_server_public_port
 secure: false

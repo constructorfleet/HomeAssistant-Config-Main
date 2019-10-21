@@ -1,4 +1,4 @@
-name: environmental
+# name: environmental
 host: !secret environmental_server_host
 port: !secret environmental_server_public_port
 secure: false

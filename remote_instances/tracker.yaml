@@ -1,4 +1,4 @@
-name: tracker
+# name: tracker
 host: !secret tracker_server_host
 port: !secret tracker_server_public_port
 secure: false

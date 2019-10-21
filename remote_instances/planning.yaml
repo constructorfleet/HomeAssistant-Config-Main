@@ -1,4 +1,4 @@
-name: planning
+# name: planning
 host: !secret planning_server_host
 port: !secret planning_server_public_port
 secure: false
