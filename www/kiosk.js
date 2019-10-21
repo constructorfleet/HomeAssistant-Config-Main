@@ -12,16 +12,16 @@ if (window.location.href.indexOf('kiosk') > 0)
             const huiroot = lovelace.querySelector('hui-root').shadowRoot;
             const header = huiroot.querySelector('app-header');
             const toolbar = huiroot.querySelector('app-toolbar');
-            if (window.location.href.indexOf('show_tabs') > 0) {
-                toolbar.style.display = 'none';
-            } else {
-                header.style.display = 'none';
-            }
-            const button = app_toolbar.querySelector('paper-icon-button')
+            const button = toolbar.querySelector('paper-icon-button')
             if (button) {
                 try {
                     button.click();
                 } catch (e) {}
+            }
+            if (window.location.href.indexOf('show_tabs') > 0) {
+                toolbar.style.display = 'none';
+            } else {
+                header.style.display = 'none';
             }
             const mainView = huiroot.querySelector('div#view');
             mainView.style.overflowY = 'hidden'
