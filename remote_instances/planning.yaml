@@ -4,7 +4,7 @@ port: !secret planning_server_public_port
 secure: false
 access_token: !secret planning_server_token
 proxy_api: true
-proxy_compoents:
+proxy_components:
   - calendar
   - wunderlist
 subscribe_to:
