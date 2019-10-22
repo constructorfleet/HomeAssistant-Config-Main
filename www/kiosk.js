@@ -9,7 +9,7 @@ if (window.location.href.indexOf('kiosk') > 0)
     'app-drawer#drawer {' +
     '   display: none!;'+
     '}',
-    'app-headerr {' +
+    'app-header {' +
     '   display: none!;'+
     '}'];
     style.innerHTML = styles.join('\n');
