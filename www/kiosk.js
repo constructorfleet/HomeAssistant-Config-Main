@@ -4,15 +4,16 @@ if (window.location.href.indexOf('kiosk') > 0)
 
     var styles = [
     'div#container {'+
-    '   margin: 0;' +
+    '   margin: 0!;' +
     '}',
     'app-drawer#drawer {' +
-    '   display: none'+
+    '   display: none!;'+
     '}',
     'app-headerr {' +
-    '   display: none'+
+    '   display: none!;'+
     '}'];
     document.getElementsByTagName('head')[0].appendChild(style);
+    window.dispatchEvent(new Event('resize'));
     setTimeout(function () {
         try {
             // const root = document.querySelector('home-assistant').shadowRoot;
@@ -39,7 +40,6 @@ if (window.location.href.indexOf('kiosk') > 0)
             // }
             // const mainView = huiroot.querySelector('div#view');
             // mainView.style.overflowY = 'hidden'
-            window.dispatchEvent(new Event('resize'));
             if (!(self || {}).hassConnection) {
                 return;
             }
