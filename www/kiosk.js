@@ -12,6 +12,7 @@ if (window.location.href.indexOf('kiosk') > 0)
     'app-headerr {' +
     '   display: none!;'+
     '}'];
+    style.innerHTML = styles.join('\n');
     document.getElementsByTagName('head')[0].appendChild(style);
     window.dispatchEvent(new Event('resize'));
     setTimeout(function () {
