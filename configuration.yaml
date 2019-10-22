@@ -20,16 +20,6 @@ frontend:
   extra_js_url_es5:
     - https://github.com/Georgegriff/query-selector-shadow-dom/blob/master/src/querySelectorDeep.js
 
-config:
-
-camera:
-
-media_player:
-
-device_tracker:
-
-person:
-
 http:
   base_url: https://automation.prettybaked.com
   server_port: 8123
@@ -42,6 +32,20 @@ influxdb: !include influx_db.yaml
 
 remote_homeassistant:
   instances: !include_dir_list remote_instances
+
+config:
+
+# Required to register services in main instance...
+camera:
+media_player:
+device_tracker:
+person:
+light:
+switch:
+cover:
+remote:
+input_number:
+input_boolean:
 
 logger:
   default: info
