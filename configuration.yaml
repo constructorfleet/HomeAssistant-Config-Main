@@ -35,18 +35,6 @@ remote_homeassistant:
 
 config:
 
-# Required to register services in main instance...
-camera:
-media_player:
-device_tracker:
-person:
-light:
-switch:
-cover:
-remote:
-input_number:
-input_boolean:
-
 logger:
   default: info
   logs:
