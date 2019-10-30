@@ -25,6 +25,7 @@ input_boolean:
 input_date:
 device_tracker:
 person:
+media_player:
 
 frontend:
   javascript_version: auto
