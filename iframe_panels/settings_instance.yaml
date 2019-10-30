@@ -1,3 +1,0 @@
-title: Settings
-url: !secret settings_server_uri
-icon: mdi:settings

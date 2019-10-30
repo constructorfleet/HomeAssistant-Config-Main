@@ -1,3 +1,0 @@
-title: Tracker
-url: !secret tracker_server_uri
-icon: mdi:crosshairs-gps

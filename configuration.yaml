@@ -20,9 +20,9 @@ climate:
 switch:
 notify:
 cover:
-input_number:
-input_boolean:
-input_date:
+input_number: {}
+input_boolean: {}
+input_date: {}
 device_tracker:
 person:
 media_player:
@@ -42,6 +42,10 @@ panel_iframe: !include_dir_named iframe_panels
 recorder: !include recorder.yaml
 
 influxdb: !include influx_db.yaml
+
+history:
+
+map:
 
 remote_homeassistant:
   instances: !include_dir_list remote_instances
