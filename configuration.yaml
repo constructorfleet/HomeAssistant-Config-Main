@@ -15,7 +15,7 @@ homeassistant:
       meta: True
 
 light:
-locK:
+lock:
 climate:
 switch:
 notify:
@@ -24,6 +24,7 @@ input_number:
 input_boolean:
 input_date:
 device_tracker:
+person:
 
 frontend:
   javascript_version: auto
