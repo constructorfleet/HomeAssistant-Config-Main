@@ -14,6 +14,17 @@ homeassistant:
       args: ["/config/ldap-auth.cfg"]
       meta: True
 
+light:
+locK:
+climate:
+switch:
+notify:
+cover:
+input_number:
+input_boolean:
+input_date:
+device_tracker:
+
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
