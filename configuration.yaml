@@ -25,7 +25,7 @@ device_tracker:
 person:
 media_player:
 
-# ENDHAD
+# ENDHACK
 
 # Notifications
 notify: !include_dir_list notifiers
