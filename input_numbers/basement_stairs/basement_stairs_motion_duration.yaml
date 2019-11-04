@@ -1,0 +1,6 @@
+name: Basement Stairs Motion Timeout
+min: 1
+max: 5
+step: 1
+unit_of_measurement: minutes
+mode: slider

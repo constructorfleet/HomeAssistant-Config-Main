@@ -14,18 +14,28 @@ homeassistant:
       args: ["/config/ldap-auth.cfg"]
       meta: True
 
+# BEGINHACK
+# Prevents issue with servie not found for remote instance
 light:
 lock:
 climate:
 switch:
-notify:
 cover:
-input_number: {}
-input_boolean: {}
-input_date: {}
 device_tracker:
 person:
 media_player:
+
+# ENDHAD
+
+# Notifications
+notify: !include_dir_list notifiers
+ios:
+  push:
+    categories: !include_dir_list ios_push_categories
+
+# Settings
+input_number: !include_dir_named input_numbers
+input_boolean: !include_dir_named input_booleans
 
 frontend:
   javascript_version: auto

@@ -1,0 +1,6 @@
+name: Kitchen Motion Timeout
+min: 5
+max: 40
+step: 5
+unit_of_measurement: minutes
+mode: slider

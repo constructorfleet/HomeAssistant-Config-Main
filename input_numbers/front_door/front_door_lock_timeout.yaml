@@ -1,0 +1,6 @@
+name: Front Door Lock Timeout
+min: 5
+max: 20
+step: 1
+unit_of_measurement: minutes
+mode: slider
