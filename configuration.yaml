@@ -24,6 +24,7 @@ cover:
 device_tracker:
 person:
 media_player:
+alarm_control_panel:
 
 # ENDHACK
 
