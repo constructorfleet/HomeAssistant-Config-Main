@@ -1,0 +1,6 @@
+binary_sensor.sleepnumber_teagan_teagan_is_in_bed:
+  device_class: occupancy
+  friendly_name: Bed Window
+binary_sensor.sleepnumber_teagan_grace_is_in_bed:
+  device_class: occupancy
+  friendly_name: Bed Closet
