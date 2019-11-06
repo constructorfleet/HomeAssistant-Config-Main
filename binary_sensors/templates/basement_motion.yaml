@@ -1,0 +1,6 @@
+friendly_name: Basement Motion
+entity_id:
+   - binary_sensor.laundry_room_motion
+   - binary_sensor.server_rack_motion
+device_class: motion
+value_template: "{{ states.binary_sensor.laundry_room_motion.state == 'on' or states.binary_sensor.server_rack_motion.state == 'on' }}"
