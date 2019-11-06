@@ -39,7 +39,7 @@ input_number: !include_dir_named input_numbers
 input_boolean: !include_dir_named input_booleans
 
 # Templates
-sensor: !include_dir_list sensors
+binary_sensors: !include_dir_list binary_sensors
 
 frontend:
   javascript_version: auto
