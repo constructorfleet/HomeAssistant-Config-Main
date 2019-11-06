@@ -38,6 +38,9 @@ ios:
 input_number: !include_dir_named input_numbers
 input_boolean: !include_dir_named input_booleans
 
+# Templates
+sensor: !include_dir_list sensors
+
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
