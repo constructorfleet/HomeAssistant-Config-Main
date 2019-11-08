@@ -14,20 +14,6 @@ homeassistant:
       args: ["/config/ldap-auth.cfg"]
       meta: True
 
-# BEGINHACK
-# Prevents issue with servie not found for remote instance
-light:
-lock:
-climate:
-switch:
-cover:
-device_tracker:
-person:
-media_player:
-alarm_control_panel:
-
-# ENDHACK
-
 # Notifications
 notify: !include_dir_list notifiers
 ios:
@@ -70,3 +56,17 @@ logger:
   default: info
   logs:
     homeassistant.components.remote_homeassistant: debug
+
+# BEGINHACK
+# Prevents issue with servie not found for remote instance
+light:
+lock:
+climate:
+switch:
+cover:
+device_tracker:
+person:
+media_player:
+alarm_control_panel:
+
+# ENDHACK
