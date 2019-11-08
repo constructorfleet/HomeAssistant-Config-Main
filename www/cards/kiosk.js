@@ -1,19 +1,19 @@
 if (window.location.href.indexOf('kiosk') > 0) {
-    // var style = document.createElement('style');
-    // style.type = 'text/css';
+    var style = document.createElement('style');
+    style.type = 'text/css';
 
-    // var styles = [
-    // 'div#container {'+
-    // '   margin: 0!;' +
-    // '}',
-    // 'app-drawer#drawer {' +
-    // '   display: none!;'+
-    // '}',
-    // 'app-header {' +
-    // '   display: none!;'+
-    // '}'];
-    // style.innerHTML = styles.join('\n');
-    // document.getElementsByTagName('head')[0].appendChild(style);
+    var styles = [
+    'div#container {'+
+    '   margin: 0!;' +
+    '}',
+    'app-drawer#drawer {' +
+    '   display: none!;'+
+    '}',
+    'app-header {' +
+    '   display: none!;'+
+    '}'];
+    style.innerHTML = styles.join('\n');
+    document.getElementsByTagName('head')[0].appendChild(style);
     window.dispatchEvent(new Event('resize'));
     setTimeout(function () {
         try {
