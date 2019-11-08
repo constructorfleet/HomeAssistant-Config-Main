@@ -1,4 +1,4 @@
-if (window.location.href.indexOf('kiosk') > 0)
+if (window.location.href.indexOf('kiosk') > 0) {
     // var style = document.createElement('style');
     // style.type = 'text/css';
 
