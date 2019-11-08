@@ -61,3 +61,4 @@ if (window.location.href.indexOf('kiosk') > 0) {
             console.log(e);
         }
     }, 200);
+}
