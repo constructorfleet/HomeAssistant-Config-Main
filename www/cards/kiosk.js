@@ -21,7 +21,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const main = root.querySelector('home-assistant-main').shadowRoot;
             const drawer_layout = main.querySelector('app-drawer-layout').shadowRoot;
             const sidebar_slot = drawer_layout.querySelector('slot#drawerSlot').shadowRoot;
-            const content_container = drawer_layout.querySelector('div#contentContainer');
+            const drawer_content_container = drawer_layout.querySelector('div#contentContainer');
             const drawer = main.querySelector('app-drawer-layout').querySelector('app-drawer');
             const drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
             const app_toolbar = drawer_sidebar.querySelector('app-toolbar');
@@ -32,14 +32,18 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const app_layout = huiroot.querySelector('ha-app-layout');
             const header = app_layout.querySelector('app-header');
             const toolbar = header.querySelector('app-toolbar');
-            const button = toolbar.querySelector('paper-icon-button')
+            const button = toolbar.querySelector('paper-icon-button');
+            const view_content_container = app_layout.shadowRoot.querySelector('div#wrapper').querySelector('div#contentContainer');
             drawer_sidebar.style = (drawer_sidebar.style || {});
             drawer.style = (drawer.style || {});
-            content_container.style = (content_container.style || {});
+            drawer_content_container.style = (drawer_content_container.style || {});
+            view_content_container.style = (view_content_container.style || {});
             drawer_sidebar.style.display = 'none';
             drawer.style.display = 'none';
-            content_container.style.marginLeft = '0px';
-            content_container.style.paddingTop = '0px';
+            drawer_content_container.style.marginLeft = '0px';
+            drawer_content_container.style.paddingTop = '0px';
+            view_content_container.style.marginLeft = '0px';
+            view_content_container.style.paddingTop = '0px';
             // if (button) {
             //     try {
             //         button.click();
