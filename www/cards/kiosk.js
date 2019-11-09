@@ -40,23 +40,30 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const drawer = window.querySelectorDeep('app-drawer-layout > app-drawer')
             const drawer_content_container = window.querySelectorDeep('app-drawer-layout > div#contentContainer');
             const view_content_container = window.querySelectorDeep('div#contentContainer');
+            const toolbar = window.querySelector('app-header > app-toolbar');
+            const mainView = window.querySelector('div#view');
+
             drawer_sidebar.style = (drawer_sidebar.style || {});
             drawer.style = (drawer.style || {});
             drawer_content_container.style = (drawer_content_container.style || {});
             view_content_container.style = (view_content_container.style || {});
+            toolbar.style = (toolbar.style || {});
+            mainView.style = (toolbar.style || {});
+
             drawer_sidebar.style.display = 'none';
             drawer.style.display = 'none';
             drawer_content_container.style.marginLeft = '0px';
             drawer_content_container.style.paddingTop = '0px';
             view_content_container.style.marginLeft = '0px';
             view_content_container.style.paddingTop = '0px';
+            mainView.style.overflowY = 'hidden'
+
             if (window.location.href.indexOf('show_tabs') > 0) {
                 toolbar.style.display = 'none';
             } else {
                 header.style.display = 'none';
             }
-            const mainView = huiroot.querySelector('div#view');
-            mainView.style.overflowY = 'hidden'
+
             if (!(self || {}).hassConnection) {
                 return;
             }
