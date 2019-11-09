@@ -31,7 +31,7 @@ frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
   extra_js_url_es5:
-    - https://github.com/Georgegriff/query-selector-shadow-dom/blob/master/src/querySelectorDeep.js
+    - /local/custom_modules/querySelectorDeep.js
 
 http:
   base_url: https://automation.prettybaked.com
