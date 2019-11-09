@@ -36,7 +36,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             // const view_content_container = app_layout.shadowRoot.querySelector('div#wrapper').querySelector('div#contentContainer');
 
 
-            const drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
+            const drawer_sidebar = window.querySelectorDeep('ha-sidebar').shadowRoot;
             const drawer = window.querySelectorDeep('app-drawer-layout > app-drawer')
             const drawer_content_container = window.querySelectorDeep('app-drawer-layout > div#contentContainer');
             const view_content_container = window.querySelectorDeep('div#contentContainer');
