@@ -25,11 +25,12 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const drawer = main.querySelector('app-drawer-layout').querySelector('app-drawer');
             const drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
             const app_toolbar = drawer_sidebar.querySelector('app-toolbar');
-            const pages = drawer_layout.querySelector('partial-panel-resolver');
+            const pages = main.querySelector('app-drawer-layout').querySelector('partial-panel-resolver');
             const lovelace = pages.querySelector('ha-panel-lovelace').shadowRoot;
             const huiroot = lovelace.querySelector('hui-root').shadowRoot;
+            const app_layout = huiroot.querySelector('ha-app-layout');
             const header = huiroot.querySelector('app-header');
-            const toolbar = huiroot.querySelector('app-toolbar');
+            const toolbar = header.querySelector('app-toolbar');
             const button = toolbar.querySelector('paper-icon-button')
             drawer.style.display = 'none';
             drawer_sidebar.style.display = 'none';
