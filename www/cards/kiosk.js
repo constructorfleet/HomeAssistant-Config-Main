@@ -39,6 +39,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             drawer_sidebar.style.display = 'none';
             drawer.style.display = 'none';
             content_container.style.marginLeft = '0px';
+            content_container.style.paddingTop = '0px';
             // if (button) {
             //     try {
             //         button.click();
