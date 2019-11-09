@@ -38,8 +38,8 @@ if (window.location.href.indexOf('kiosk') > 0) {
 
             const drawer_sidebar = window.querySelectorDeep('ha-sidebar').shadowRoot;
             const drawer = window.querySelectorDeep('app-drawer-layout > app-drawer')
-            const drawer_content_container = window.querySelectorDeep('app-drawer-layout > div#contentContainer');
-            const view_content_container = window.querySelectorDeep('div#contentContainer');
+            const drawer_content_container = window.querySelectorDeep('div#contentContainer');
+            const view_content_container = window.querySelectorDeep('div#wrapper > div#contentContainer');
             const toolbar = window.querySelectorDeep('app-header > app-toolbar');
             const mainView = window.querySelectorDeep('div#view');
 
