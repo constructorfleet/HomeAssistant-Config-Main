@@ -22,9 +22,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const drawer_layout = main.querySelector('app-drawer-layout').shadowRoot;
             const sidebar_slot = drawer_layout.querySelector('slot#drawerSlot').shadowRoot;
             const content_container = drawer_layout.querySelector('div#contentContainer');
-            content_container.style.marginLeft = '0px';
             const drawer = drawer_layout.querySelector('app-drawer');
-            drawer.style.display = 'none';
             const drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
             const app_toolbar = drawer_sidebar.querySelector('app-toolbar');
             const pages = drawer_layout.querySelector('partial-panel-resolver');
@@ -33,6 +31,8 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const header = huiroot.querySelector('app-header');
             const toolbar = huiroot.querySelector('app-toolbar');
             const button = toolbar.querySelector('paper-icon-button')
+            drawer.style.display = 'none';
+            content_container.style.marginLeft = '0px';
             // if (button) {
             //     try {
             //         button.click();
