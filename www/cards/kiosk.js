@@ -30,7 +30,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const lovelace = pages.querySelector('ha-panel-lovelace').shadowRoot;
             const huiroot = lovelace.querySelector('hui-root').shadowRoot;
             const app_layout = huiroot.querySelector('ha-app-layout');
-            const header = huiroot.querySelector('app-header');
+            const header = app_layout.querySelector('app-header');
             const toolbar = header.querySelector('app-toolbar');
             const button = toolbar.querySelector('paper-icon-button')
             drawer.style.display = 'none';
