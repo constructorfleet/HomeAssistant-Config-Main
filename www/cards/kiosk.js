@@ -19,9 +19,14 @@ if (window.location.href.indexOf('kiosk') > 0) {
         try {
             const root = document.querySelector('home-assistant').shadowRoot;
             const main = root.querySelector('home-assistant-main').shadowRoot;
-            const drawer_layout = main.querySelector('app-drawer-layout');
+            const drawer_layout = main.querySelector('app-drawer-layout').shadowRoot;
+            const sidebar_slot = drawer_layout.querySelector('slot#drawerSlot').shadowRoot;
+            const slot_app_drawer = sidebar_slot.querySelector('app-drawer');
+            slot_app_drawer.style.display = 'none';
+            const content_container = drawer_layout.querySelector('div#contentContainer');
+            content_container.style.marginLeft = '0px';
             const drawer = drawer_layout.querySelector('app-drawer');
-            drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
+            const drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
             const app_toolbar = drawer_sidebar.querySelector('app-toolbar');
             const pages = drawer_layout.querySelector('partial-panel-resolver');
             const lovelace = pages.querySelector('ha-panel-lovelace').shadowRoot;
