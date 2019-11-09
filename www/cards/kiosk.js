@@ -41,6 +41,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const drawer_content_container = window.querySelectorDeep('div#contentContainer');
             const view_content_container = window.querySelectorDeep('div#wrapper > div#contentContainer');
             const toolbar = window.querySelectorDeep('app-header > app-toolbar');
+            const header = window.querySelector('ha-app-layout > app-header');
             const mainView = window.querySelectorDeep('div#view');
 
             drawer_sidebar.style = (drawer_sidebar.style || {});
