@@ -17,11 +17,11 @@
 * Another example querySelectorAllDeep('#downloads-list div#title-area + a');
 e.g.
 */
-export function querySelectorAllDeep(selector, root = document) {
+window.querySelectorAllDeep = function(selector, root = document) {
     return _querySelectorDeep(selector, true, root);
 }
 
-export function querySelectorDeep(selector, root = document) {
+window.querySelectorDeep = function(selector, root = document) {
     return _querySelectorDeep(selector, false, root);
 }
 
