@@ -34,11 +34,11 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const header = huiroot.querySelector('app-header');
             const toolbar = huiroot.querySelector('app-toolbar');
             const button = toolbar.querySelector('paper-icon-button')
-            if (button) {
-                try {
-                    button.click();
-                } catch (e) {}
-            }
+            // if (button) {
+            //     try {
+            //         button.click();
+            //     } catch (e) {}
+            // }
             if (window.location.href.indexOf('show_tabs') > 0) {
                 toolbar.style.display = 'none';
             } else {
