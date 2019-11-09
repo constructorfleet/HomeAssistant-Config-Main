@@ -25,7 +25,8 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const drawer = main.querySelector('app-drawer-layout').querySelector('app-drawer');
             const drawer_sidebar = drawer.querySelector('ha-sidebar').shadowRoot;
             const app_toolbar = drawer_sidebar.querySelector('app-toolbar');
-            const pages = main.querySelector('app-drawer-layout').querySelector('partial-panel-resolver');
+            const app_drawer_layout = main.querySelector('app-drawer-layout');
+            const pages = app_drawer_layout.querySelector('partial-panel-resolver');
             const lovelace = pages.querySelector('ha-panel-lovelace').shadowRoot;
             const huiroot = lovelace.querySelector('hui-root').shadowRoot;
             const app_layout = huiroot.querySelector('ha-app-layout');
