@@ -33,8 +33,11 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const header = app_layout.querySelector('app-header');
             const toolbar = header.querySelector('app-toolbar');
             const button = toolbar.querySelector('paper-icon-button')
-            drawer.style.display = 'none';
+            drawer_sidebar.style = (drawer_sidebar.style || {});
+            drawer.style = (drawer.style || {});
+            content_container.style = (content_container.style || {});
             drawer_sidebar.style.display = 'none';
+            drawer.style.display = 'none';
             content_container.style.marginLeft = '0px';
             // if (button) {
             //     try {
