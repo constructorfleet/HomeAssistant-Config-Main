@@ -16,6 +16,7 @@ homeassistant:
 
 # Notifications
 notify: !include_dir_list notifiers
+mobile_app:
 ios:
   push:
     categories: !include_dir_list ios_push_categories
@@ -54,8 +55,6 @@ config:
 
 logger:
   default: info
-  logs:
-    homeassistant.components.remote_homeassistant: debug
 
 # BEGINHACK
 # Prevents issue with servie not found for remote instance
@@ -68,5 +67,6 @@ device_tracker:
 person:
 media_player:
 alarm_control_panel:
+vacuum:
 
 # ENDHACK
