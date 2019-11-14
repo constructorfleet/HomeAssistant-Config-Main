@@ -1,4 +1,4 @@
 platform: generic
 name: Doorbell
-still_image_url: '{{ security_server_uri }}{{ states.camera.front_door.attributes.entity_picture }}'
+still_image_url: 'http://10.0.11.174:9007{{ states.camera.front_door.attributes.entity_picture }}'
 stream_source: rtsp://10.0.50.117:7447/5c44c565e4b0b1adf6614d97_2
