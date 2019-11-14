@@ -28,6 +28,8 @@ input_boolean: !include_dir_named input_booleans
 # Templates
 binary_sensor: !include_dir_list binary_sensors
 
+camera: !include_dir_list cameras
+
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
@@ -61,7 +63,6 @@ logger:
 light:
 lock:
 climate:
-camera:
 switch:
 cover:
 device_tracker:
