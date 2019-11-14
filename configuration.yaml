@@ -61,6 +61,7 @@ logger:
 light:
 lock:
 climate:
+camera:
 switch:
 cover:
 device_tracker:
