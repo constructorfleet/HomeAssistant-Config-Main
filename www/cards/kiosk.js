@@ -2,6 +2,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
     window.dispatchEvent(new Event('resize'));
     setTimeout(function () {
         try {
+            const body = window.querySelectorDeep('body')
             const drawer_sidebar = window.querySelectorDeep('ha-sidebar').shadowRoot;
             const drawer = window.querySelectorDeep('app-drawer-layout > app-drawer')
             const drawer_content_container = window.querySelectorDeep('div#contentContainer');
@@ -11,6 +12,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             const mainView = window.querySelectorDeep('div#view');
             const weatherWarningView = window.querySelectorDeep('ha-card > div.flex.info > span#value');
 
+            body.style = (body.style || {});
             drawer_sidebar.style = (drawer_sidebar.style || {});
             drawer.style = (drawer.style || {});
             drawer_content_container.style = (drawer_content_container.style || {});
@@ -19,6 +21,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             mainView.style = (toolbar.style || {});
             weatherWarningView.style = (weatherWarningView.style || {});
 
+            body.style.overflowY = 'hidden';
             drawer_sidebar.style.display = 'none';
             drawer.style.display = 'none';
             drawer_content_container.style.marginLeft = '0px';
