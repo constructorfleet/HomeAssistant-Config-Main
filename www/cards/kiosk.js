@@ -3,15 +3,19 @@ if (window.location.href.indexOf('kiosk') > 0) {
     style.type = 'text/css';
 
     var styles = [
-    'div#container {'+
-    '   margin: 0!;' +
-    '}',
-    'app-drawer#drawer {' +
-    '   display: none!;'+
-    '}',
-    'app-header {' +
-    '   display: none!;'+
-    '}'];
+        'div#container {'+
+        '   margin: 0!;' +
+        '}',
+        'app-drawer#drawer {' +
+        '   display: none!;'+
+        '}',
+        'app-header {' +
+        '   display: none!;'+
+        '}',
+        'ha-card > div.flex.info > span#value {' +
+        '   font-size: 1.6rem;' +
+        '}'
+    ];
     style.innerHTML = styles.join('\n');
     document.getElementsByTagName('head')[0].appendChild(style);
     window.dispatchEvent(new Event('resize'));
