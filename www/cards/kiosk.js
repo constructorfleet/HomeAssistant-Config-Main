@@ -40,6 +40,7 @@ if (window.location.href.indexOf('kiosk') > 0) {
             if (!(self || {}).hassConnection) {
                 return;
             }
+            window.dispatchEvent(new Event('resize'));
             self.hassConnection.then(
                 function (hass) {
                     if (!(hass || {}).conn) { return; }
