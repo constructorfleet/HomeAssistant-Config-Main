@@ -29,7 +29,9 @@ if (window.location.href.indexOf('kiosk') > 0) {
             view_content_container.style.marginLeft = '0px';
             view_content_container.style.paddingTop = '0px';
             mainView.style.overflowY = 'hidden'
-            weatherWarningView.style.fontSize = '1.6rem';
+            if (weatherWarningView) {
+                weatherWarningView.style.fontSize = '1.6rem';
+            }
 
             if (window.location.href.indexOf('show_tabs') > 0) {
                 toolbar.style.display = 'none';
