@@ -19,7 +19,9 @@ if (window.location.href.indexOf('kiosk') > 0) {
             view_content_container.style = (view_content_container.style || {});
             toolbar.style = (toolbar.style || {});
             mainView.style = (toolbar.style || {});
-            weatherWarningView.style = (weatherWarningView.style || {});
+            if (weatherWarningView) {
+                weatherWarningView.style = (weatherWarningView.style || {});
+            }
 
             body.style.overflowY = 'hidden';
             drawer_sidebar.style.display = 'none';
