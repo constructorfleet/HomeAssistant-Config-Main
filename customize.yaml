@@ -4,3 +4,21 @@ binary_sensor.sleepnumber_teagan_teagan_is_in_bed:
 binary_sensor.sleepnumber_teagan_grace_is_in_bed:
   device_class: occupancy
   friendly_name: Bed Closet
+binary_sensor.kitchen_motion:
+  device_class: motion
+binary_sensor.basement_stairs_motion:
+  device_class: motion
+binary_sensor.dining_room_motion:
+  device_class: motion
+binary_sensor.laundry_room_motion:
+  device_class: motion
+binary_sensor.lower_stair_motion:
+  device_class: motion
+binary_sensor.server_rack_motion:
+  device_class: motion
+binary_sensor.interior_garage_door_sensor:
+  device_class: door
+binary_sensor.front_door_sensor:
+  device_class: door
+
+
