@@ -53,6 +53,10 @@ history:
 
 map:
 
+almond:
+  type: local
+  host: http://deepthought.home.prettybaked.com:3000
+
 remote_homeassistant:
   instances: !include_dir_list remote_instances
 
@@ -70,6 +74,7 @@ switch:
 cover:
 device_tracker:
 person:
+fan:
 media_player:
 alarm_control_panel:
 vacuum:
