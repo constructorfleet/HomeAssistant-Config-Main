@@ -11,8 +11,8 @@ homeassistant:
     - type: command_line
       name: LDAP
       command: /config/ldap-auth.sh
-      args: ["/config/ldap-auth.cfg"]
-      meta: True
+      args: 
+        - /config/ldap-auth.cfg
 
 # Notifications
 notify: !include_dir_list notifiers
