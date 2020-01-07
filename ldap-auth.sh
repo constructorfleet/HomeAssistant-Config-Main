@@ -31,6 +31,7 @@ ldap_auth_ldapsearch() {
 	if [ $(dpkg-query -l | grep ldap-utils | wc -l) -eq 0 ];
 	then \
         echo "Installing LDAP Utilities"
+        # apk add openldap-client
 		apt-get update;
 		apt-get install -y ldap-utils;
 	fi
