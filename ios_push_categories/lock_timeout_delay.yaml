@@ -1,0 +1,7 @@
+name: Door Lock Delayed
+identifier: securitylockdelay
+actions:
+  - identifier: actionlockacknowledge
+    title: Acknowledge
+  - identifier: actionlocksilence
+    title: Silence for 30 minutes
