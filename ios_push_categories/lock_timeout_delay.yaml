@@ -1,7 +1,7 @@
 name: Door Lock Delayed
 identifier: securitylockdelay
 actions:
-  - identifier: actionlockacknowledge
+  - identifier: actionlockdelayacknowledge
     title: Acknowledge
-  - identifier: actionlocksilence
+  - identifier: actionlockdelaysilence
     title: Silence for 30 minutes
