@@ -1,0 +1,9 @@
+platform: template
+sensors:
+  basement_stair_motion:
+    friendly_name: Basement Stair Motion
+    entity_id:
+       - binary_sensor.basement_stairs_motion
+       - binary_sensor.lower_basement_stairs_motion
+    device_class: motion
+    value_template: "{{ states.binary_sensor.basement_stairs_motion.state == 'on' or states.binary_sensor.lower_basement_stairs_motion.state == 'on' }}"
