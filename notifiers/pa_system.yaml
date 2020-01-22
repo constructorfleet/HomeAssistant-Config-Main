@@ -1,5 +1,0 @@
-name: PA System
-platform: rest
-resource: http://voice:12101/api/text-to-speech
-method: POST
-data_template: "{{ message }}"

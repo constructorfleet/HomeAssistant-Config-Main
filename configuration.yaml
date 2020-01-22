@@ -55,10 +55,6 @@ map:
 
 twilio: !include twilio.yaml
 
-almond:
-  type: local
-  host: http://deepthought.home.prettybaked.com:3000
-
 remote_homeassistant:
   instances: !include_dir_list remote_instances
 
