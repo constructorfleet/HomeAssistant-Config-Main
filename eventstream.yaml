@@ -1,0 +1,7 @@
+publish_topic: events/slaves/hubs
+subscribe_topic: events/master
+ignore_event:
+  - call_service
+  - component_loaded
+  - platform_discovered
+  - isy994_control

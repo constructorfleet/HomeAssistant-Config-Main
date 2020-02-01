@@ -77,3 +77,6 @@ media_player:
 alarm_control_panel:
 vacuum:
 # ENDHACK
+
+mqtt: !include mqtt.yaml
+mqtteventstream: !include eventstream.yaml

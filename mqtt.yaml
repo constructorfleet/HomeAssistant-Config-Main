@@ -1,0 +1,2 @@
+broker: mqtt
+client_id: master
