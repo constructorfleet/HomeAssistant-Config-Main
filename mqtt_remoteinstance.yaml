@@ -2,7 +2,7 @@ events:
   publish_topic: events/master
   subscribe_topic: events/slaves/#
   ignore_event:
-    - call_service
+    - state_changed
     - component_loaded
     - platform_discovered
 states:
