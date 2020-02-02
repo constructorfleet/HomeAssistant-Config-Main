@@ -9,6 +9,8 @@ home-assistant.log
 
 __pycache__/
 
+**/__pycache__/
+
 .google*
 .google*.cookies
 google_calendars.yaml
