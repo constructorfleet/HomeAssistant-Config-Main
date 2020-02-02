@@ -1,6 +1,6 @@
 events:
-  publish_topic: events/slaves/#
-  subscribe_topic: events/master
+  publish_topic: events/master
+  subscribe_topic: events/slaves/#
   ignore_event:
     - call_service
     - component_loaded
