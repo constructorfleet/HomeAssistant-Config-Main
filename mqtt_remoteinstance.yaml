@@ -6,4 +6,4 @@ events:
     - component_loaded
     - platform_discovered
 states:
-  subscribe_topic_base: states/#
+  subscribe_topic_base: states/+
