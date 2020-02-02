@@ -81,3 +81,9 @@ vacuum:
 mqtt: !include mqtt.yaml
 # mqtteventstream: !include eventstream.yaml
 mqtt_remoteinstance: !include mqtt_remoteinstance.yaml
+
+logger:
+  default: warning
+  logs:
+    homeassistant.components.mqtt: debug
+    homeassistant.components.mqtt_remoteinstance: debug
