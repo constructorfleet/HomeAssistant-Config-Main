@@ -79,4 +79,5 @@ vacuum:
 # ENDHACK
 
 mqtt: !include mqtt.yaml
-mqtteventstream: !include eventstream.yaml
+# mqtteventstream: !include eventstream.yaml
+mqtt_remoteinstance: !include mqtt_remoteinstance.yaml
