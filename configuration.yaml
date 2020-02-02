@@ -37,6 +37,7 @@ frontend:
     - /local/custom_modules/querySelectorDeep.js
 
 http:
+  base_url: http://constructorfleet.iot
 
 panel_iframe: !include_dir_named iframe_panels
 panel_custom: !include_dir_list custom_panels
