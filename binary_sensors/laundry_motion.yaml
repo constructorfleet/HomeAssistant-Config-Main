@@ -1,7 +1,7 @@
 platform: template
 sensors:
   basement_motion:
-    friendly_name: Basement Motion
+    friendly_name: Laundry Motion
     entity_id:
        - binary_sensor.laundry_room_motion
        - binary_sensor.server_rack_motion

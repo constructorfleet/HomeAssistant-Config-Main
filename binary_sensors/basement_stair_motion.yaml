@@ -6,4 +6,4 @@ sensors:
        - binary_sensor.basement_stairs_motion
        - binary_sensor.lower_basement_stairs_motion
     device_class: motion
-    value_template: "{{ states.binary_sensor.basement_stairs_motion.state == 'on' or states.binary_sensor.lower_basement_stairs_motion.state == 'on' }}"
+    value_template: "{{ states.binary_sensor.basement_stairs_motion.state == 'on' or states.binary_sensor.bottom_basement_stairs_motion.state == 'on' }}"
