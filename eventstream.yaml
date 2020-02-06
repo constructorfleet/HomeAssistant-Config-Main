@@ -1,3 +1,4 @@
+name: master
 publish_topic: events/master
 subscribe_topic: events/slaves/#
 ignore_event:
