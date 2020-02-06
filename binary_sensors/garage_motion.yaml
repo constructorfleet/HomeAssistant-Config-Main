@@ -1,9 +1,0 @@
-platform: template
-sensors:
-  garage_motion:
-    friendly_name: Garage Motion
-    entity_id:
-       - binary_sensor.garage_motion_sensor_1
-       - binary_sensor.garage_motion_sensor_2
-    device_class: motion
-    value_template: "{{ states.binary_sensor.garage_motion_sensor_1.state == 'on' or states.binary_sensor.garage_motion_sensor_2.state == 'on' }}"
