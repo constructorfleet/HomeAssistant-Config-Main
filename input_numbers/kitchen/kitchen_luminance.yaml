@@ -1,6 +1,0 @@
-name: Kitchen Light Luminance
-min: 0
-max: 10
-step: 1
-unit_of_measurement: lux
-mode: slider

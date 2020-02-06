@@ -21,10 +21,6 @@ ios:
   push:
     categories: !include_dir_list ios_push_categories
 
-# Settings
-input_number: !include_dir_named input_numbers
-input_boolean: !include_dir_named input_booleans
-
 camera: !include_dir_list cameras
 
 frontend:

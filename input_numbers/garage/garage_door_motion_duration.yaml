@@ -1,6 +1,0 @@
-name: Garage Door Motion Timeout
-min: 1
-max: 20
-step: 1
-unit_of_measurement: minutes
-mode: slider
