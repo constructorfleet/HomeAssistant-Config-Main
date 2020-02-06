@@ -1,6 +1,7 @@
 name: master
 publish_topic: events/master
 subscribe_topic: events/slaves/#
+public_state_topic_base: states
 ignore_event:
   - state_changed
   - component_loaded
