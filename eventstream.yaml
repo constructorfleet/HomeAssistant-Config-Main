@@ -5,4 +5,3 @@ ignore_event:
   - state_changed
   - component_loaded
   - platform_discovered
-  - isy994_control
