@@ -1,5 +1,6 @@
 publish_topic: events/master
 subscribe_topic: events/slaves/#
+subscribe_rules_topic: events/rules
 ignore_event:
   - state_changed
   - component_loaded
