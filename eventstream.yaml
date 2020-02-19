@@ -3,6 +3,5 @@ subscribe_topic: events/slaves/#
 subscribe_rules_topic: events/rules
 subscribe_state_topic: states/#
 ignore_event:
-  - state_changed
   - component_loaded
   - platform_discovered
