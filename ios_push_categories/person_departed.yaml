@@ -1,5 +1,5 @@
 name: Someone has left
-identifier: presencedeparted
+identifier: presencepersondeparted
 actions:
    - title: Lock
      identifier: actionlock
