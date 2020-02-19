@@ -1,7 +1,8 @@
 publish_topic: events/master
+state_publish_topic: states/master
 subscribe_topic: events/slaves/#
 subscribe_rules_topic: events/rules
-subscribe_state_topic: states/#
+subscribe_state_topic: states/slaves/#
 ignore_event:
   - component_loaded
   - platform_discovered
