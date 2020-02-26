@@ -1,3 +1,0 @@
-platform: nfandroidtv
-name: Shield
-host: !secret office_shield_host
