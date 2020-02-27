@@ -45,8 +45,6 @@ history:
 
 map:
 
-twilio: !include twilio.yaml
-
 # remote_homeassistant:
 #   instances: !include_dir_list remote_instances
 
