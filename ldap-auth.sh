@@ -28,23 +28,6 @@ ldap_auth_curl() {
 }
 
 ldap_auth_ldapsearch() {
-    if [ $(dpkg-query -l | grep ldap-utils | wc -l) -eq 0 ];
-    then \
-        echo "Installing LDAP Utilities"
-        # apk add openldap-client
-        YUM_CMD=$(which yum)
-        APT_GET_CMD=$(which apt-get)
-        if [[ ! -z $YUM_CMD ]]; then
-            yum update;
-            yum install -y ldap-utils;
-        elif [[ ! -z $APT_GET_CMD ]]; then
-            apt-get update;
-            apt-get install -y ldap-utils;
-        else
-            echo "error can't install ldap-utils"
-            exit 1;
-        fi
-    fi
     common_opts="-o nettimeout=$TIMEOUT -H $SERVER -x"
     [ -z "$DEBUG" ] || common_opts="-v $common_opts"
     if [ -z "$BASEDN" ]; then
