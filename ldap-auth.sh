@@ -1,6 +1,7 @@
+#!/bin/sh
 # Log messages to stderr.
 log() {
-    echo "$1"
+    echo "$1" >&2
 }
 
 
@@ -37,7 +38,7 @@ ldap_auth_ldapsearch() {
             -D "$USERDN" -w "$password" \
             -s "$SCOPE" -b "$BASEDN" "$FILTER" dn $ATTRS)
     fi
-    [ $? -ne 0 ] && return 20
+    [ $? -ne 0 ] && return 1
     return 0
 }
 
@@ -50,13 +51,13 @@ fi
 CONFIG_FILE=$(realpath "$1")
 if [ ! -e "$CONFIG_FILE" ]; then
     log "'$CONFIG_FILE': not found"
-    exit 3
+    exit 2
 elif [ ! -f "$CONFIG_FILE" ]; then
     log "'$CONFIG_FILE': not a file"
-    exit 4
+    exit 2
 elif [ ! -r "$CONFIG_FILE" ]; then
     log "'$CONFIG_FILE': no read permission"
-    exit 5
+    exit 2
 fi
 . "$CONFIG_FILE"
 
@@ -64,31 +65,31 @@ fi
 err=0
 if [ -z "$SERVER" ] || [ -z "$USERDN" ]; then
     log "SERVER and USERDN need to be configured."
-    err=6
+    err=1
 fi
 if [ -z "$TIMEOUT" ]; then
     log "TIMEOUT needs to be configured."
-    err=7
+    err=1
 fi
 if [ ! -z "$BASEDN" ]; then
     if [ -z "$SCOPE" ] || [ -z "$FILTER" ]; then
         log "BASEDN, SCOPE and FILTER may only be configured together."
-        err=8
+        err=1
     fi
 elif [ ! -z "$ATTRS" ]; then
     log "Configuring ATTRS only makes sense when enabling searching."
-    err=9
+    err=1
 fi
 
 # Check username and password are present and not malformed.
 if [ -z "$username" ] || [ -z "$password" ]; then
     log "Need username and password environment variables."
-    err=10
+    err=1
 elif [ ! -z "$USERNAME_PATTERN" ]; then
     username_match=$(echo "$username" | sed -r "s/$USERNAME_PATTERN/x/")
     if [ "$username_match" != "x" ]; then
         log "Username '$username' has an invalid format."
-        err=11
+        err=1
     fi
 fi
 
