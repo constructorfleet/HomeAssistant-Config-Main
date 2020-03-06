@@ -58,6 +58,7 @@ logger:
 light:
 lock:
 climate:
+calendar:
 switch:
 cover:
 device_tracker:
