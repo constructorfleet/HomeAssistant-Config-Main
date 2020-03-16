@@ -1,9 +1,0 @@
-events:
-  publish_topic: events/master
-  subscribe_topic: events/slaves/#
-  ignore_event:
-    - state_changed
-    - component_loaded
-    - platform_discovered
-states:
-  subscribe_topic_base: states/+
