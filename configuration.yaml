@@ -45,9 +45,6 @@ history:
 
 map:
 
-# remote_homeassistant:
-#   instances: !include_dir_list remote_instances
-
 config:
 
 logger:
@@ -71,5 +68,4 @@ vacuum:
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
-# mqtt_remoteinstance: !include mqtt_remoteinstance.yaml
 
