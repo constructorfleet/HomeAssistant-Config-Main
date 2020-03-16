@@ -47,6 +47,8 @@ map:
 
 config:
 
+api_proxy: !include api_proxy.yaml
+
 logger:
   default: info
 

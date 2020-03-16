@@ -1,0 +1,4 @@
+subscribe_route_topic: routes/slaves/#
+publish_request_routes_topic: publish_request_routes_topic
+instance_hostname_prefix: automation_
+instance_hostname_casing: LOWER
