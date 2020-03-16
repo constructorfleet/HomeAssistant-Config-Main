@@ -6,3 +6,4 @@ ignore_event:
   - state_changed
   - component_loaded
   - platform_discovered
+  - route_registered
