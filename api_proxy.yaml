@@ -1,4 +1,4 @@
 subscribe_route_topic: routes/slaves/#
-publish_request_routes_topic: /events/master
+publish_request_routes_topic: events/master
 instance_hostname_prefix: automation_
 instance_hostname_casing: LOWER
