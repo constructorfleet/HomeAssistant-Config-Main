@@ -4825,21 +4825,21 @@ const styleHeader = config => {
     removeKioskMode();
 
     if (config.compact_mode && !config.footer_mode) {
-      haElem.sidebar.main.shadowRoot.querySelector('.menu').style = 'height:49px;';
-      haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height:calc(100% - 175px);';
-      haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = '';
+      window.querySelectorDeep('.menu', haElem.sidebar.main).style = 'height:49px;';
+      window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = 'height:calc(100% - 175px);';
+      window.querySelectorDeep('div.divider', haElem.sidebar.main).style = '';
     } else if (config.footer_mode && !config.split_mode) {
-      haElem.sidebar.main.shadowRoot.querySelector('.menu').style = '';
-      haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height: calc(100% - 170px);';
+      window.querySelectorDeep('.menu', haElem.sidebar.main).style = '';
+      window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = 'height: calc(100% - 170px);';
       haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = 'margin-bottom: -10px;';
     } else if (config.split_mode) {
-      haElem.sidebar.main.shadowRoot.querySelector('.menu').style = 'height:49px;';
-      haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height: calc(100% - 170px);';
-      haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = 'margin-bottom: -3px;';
+      window.querySelectorDeep('.menu', haElem.sidebar.main).style = 'height:49px;';
+      window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = 'height: calc(100% - 170px);';
+      window.querySelectorDeep('div.divider', haElem.sidebar.main).style = 'margin-bottom: -3px;';
     } else {
-        haElem.sidebar.main.shadowRoot.querySelector('.menu').style = '';
-        haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = '';
-        haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = '';
+      window.querySelectorDeep('.menu', haElem.sidebar.main).style = '';
+      window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = '';
+      window.querySelectorDeep('div.divider', haElem.sidebar.main).style = '';
     }
 
     insertStyleTags(config);
