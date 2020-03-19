@@ -25,7 +25,7 @@ camera: !include_dir_list cameras
 
 frontend:
   javascript_version: auto
-  themes: !include_dir_named frontend/themes
+  themes: !include_dir_named frontend/themes 
 
 http:
   base_url: https://automation.prettybaked.com
