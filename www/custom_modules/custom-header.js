@@ -510,21 +510,21 @@ const hass = homeAssistant.hass;
 const lovelace = F();
 const root = B();
 const haElem = {};
-haElem.main = homeAssistant.shadowRoot.querySelector('home-assistant-main');
+haElem.main = window.querySelectorDeep('home-assistant-main');
 haElem.tabs = Array.from((root.querySelector('paper-tabs') || root).querySelectorAll('paper-tab'));
 haElem.tabContainer = root.querySelector('paper-tabs');
 haElem.menu = root.querySelector('ha-menu-button');
 haElem.options = root.querySelector('paper-menu-button');
 haElem.voice = root.querySelector('ha-start-voice-button') || root.querySelector('paper-icon-button[icon="hass:microphone"]');
-haElem.drawer = haElem.main.shadowRoot.querySelector('#drawer');
+haElem.drawer = window.querySelectorDeep('#drawer');
 haElem.sidebar = {};
-haElem.sidebar.main = haElem.main.shadowRoot.querySelector('ha-sidebar');
-haElem.sidebar.menu = haElem.sidebar.main.shadowRoot.querySelector('.menu');
-haElem.sidebar.listbox = haElem.sidebar.main.shadowRoot.querySelector('paper-listbox');
-haElem.sidebar.divider = haElem.sidebar.main.shadowRoot.querySelector('div.divider');
+haElem.sidebar.main = window.querySelectorDeep('ha-sidebar');
+haElem.sidebar.menu = window.querySelectorDeep('.menu');
+haElem.sidebar.listbox = window.querySelectorDeep('paper-listbox');
+haElem.sidebar.divider = window.querySelectorDeep('div.divider');
 haElem.appHeader = root.querySelector('app-header');
 haElem.appLayout = root.querySelector('ha-app-layout');
-haElem.partialPanelResolver = haElem.main.shadowRoot.querySelector('partial-panel-resolver');
+haElem.partialPanelResolver = window.querySelectorDeep('partial-panel-resolver');
 const missing = [];
 
 for (const item in haElem) {
@@ -733,7 +733,7 @@ const buildHeader = () => {
       if (!haElem[button]) return;
       header[button] = document.createElement('paper-icon-button');
       header[button].addEventListener('click', () => {
-        (haElem[button].shadowRoot.querySelector('paper-icon-button') || haElem[button]).dispatchEvent(new MouseEvent('click', {
+        (window.querySelectorDeep('paper-icon-button', haElem[button]) || haElem[button]).dispatchEvent(new MouseEvent('click', {
           bubbles: false,
           cancelable: false
         }));
@@ -4615,24 +4615,24 @@ const observers = () => {
         setTimeout(() => selectTab(config), 200);
       } else if (addedNodes.length && target.nodeName == 'PARTIAL-PANEL-RESOLVER') {
         // When returning to lovelace/overview from elsewhere in HA.
-        if (haElem.main.shadowRoot.querySelector(' ha-panel-lovelace')) {
+        if (window.querySelectorDeep(' ha-panel-lovelace' , haElem.main)) {
           if (config.compact_mode && !config.footer_mode) {
-            haElem.sidebar.main.shadowRoot.querySelector('.menu').style = 'height:49px;';
-            haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height:calc(100% - 175px);';
-            haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = '';
+            window.querySelectorDeep('.menu', haElem.sidebar.main).style = 'height:49px;';
+            window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = 'height:calc(100% - 175px);';
+            window.querySelectorDeep('div.divider', haElem.sidebar.main).style = '';
           } else if (config.footer_mode && !config.split_mode) {
-            haElem.sidebar.main.shadowRoot.querySelector('.menu').style = '';
-            haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height: calc(100% - 170px);';
-            haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = 'margin-bottom: -10px;';
+            window.querySelectorDeep('.menu', haElem.sidebar.main).style = '';
+            window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = 'height: calc(100% - 170px);';
+            window.querySelectorDeep('div.divider', haElem.sidebar.main).style = 'margin-bottom: -10px;';
           } else if (config.split_mode) {
-            haElem.sidebar.main.shadowRoot.querySelector('.menu').style = 'height:49px;';
-            haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height: calc(100% - 170px);';
-            haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = 'margin-bottom: -3px;';
+            window.querySelectorDeep('.menu', haElem.sidebar.main).style = 'height:49px;';
+            window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = 'height: calc(100% - 170px);';
+            window.querySelectorDeep('div.divider', haElem.sidebar.main).style = 'margin-bottom: -3px;';
           }
         } else {
-          haElem.sidebar.main.shadowRoot.querySelector('.menu').style = '';
-          haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = '';
-          haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = '';
+          window.querySelectorDeep('.menu', haElem.sidebar.main).style = '';
+          window.querySelectorDeep('paper-listbox', haElem.sidebar.main).style = '';
+          window.querySelectorDeep('div.divider', haElem.sidebar.main).style = '';
         }
 
         if (root.querySelector('editor')) root.querySelector('editor').remove();
@@ -4837,9 +4837,9 @@ const styleHeader = config => {
       haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = 'height: calc(100% - 170px);';
       haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = 'margin-bottom: -3px;';
     } else {
-      haElem.sidebar.main.shadowRoot.querySelector('.menu').style = '';
-      haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = '';
-      haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = '';
+        haElem.sidebar.main.shadowRoot.querySelector('.menu').style = '';
+        haElem.sidebar.main.shadowRoot.querySelector('paper-listbox').style = '';
+        haElem.sidebar.main.shadowRoot.querySelector('div.divider').style = '';
     }
 
     insertStyleTags(config);
