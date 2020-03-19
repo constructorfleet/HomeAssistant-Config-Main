@@ -26,8 +26,6 @@ camera: !include_dir_list cameras
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
-  extra_module_url:
-    - /local/custom_modules/querySelectorDeep.js
 
 http:
   base_url: https://automation.prettybaked.com
