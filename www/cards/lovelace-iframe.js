@@ -1,4 +1,3 @@
-<script>
 class Iframe extends Polymer.Element {
   static get template() {
     return Polymer.html`
@@ -39,5 +38,5 @@ class Iframe extends Polymer.Element {
     `;
   }
 }
+
 customElements.define('lovelace-iframe', Iframe);
-</script>
