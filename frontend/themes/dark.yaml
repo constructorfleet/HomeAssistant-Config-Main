@@ -31,6 +31,8 @@ paper-slider-secondary-color: "#2b3438"
 table-row-background-color: transparant
 table-row-alternative-background-color: transparant
 
+data-table-background-color: "#33444c"
+
 # state-icon-color: "#0d1a26"
 # iron-icon-stroke-color: "#0d1a26"
 # iron-icon-fill-color: "#0d1a26"
