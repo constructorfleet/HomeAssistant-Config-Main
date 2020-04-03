@@ -7,3 +7,7 @@ ignore_event:
   - component_loaded
   - platform_discovered
   - route_registered
+ignore_event_data_patterns:
+  - system_log
+  - mqtt.dump
+  - persistent_notification
