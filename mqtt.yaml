@@ -1,2 +1,2 @@
-broker: mqtt
+broker: automation_mqtt
 client_id: master
