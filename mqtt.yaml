@@ -1,2 +1,3 @@
 broker: automation_mqtt
+port: 1883
 client_id: master
