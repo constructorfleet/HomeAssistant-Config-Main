@@ -1,0 +1,4 @@
+platform: generic
+name: Front Yard Detections
+still_image_url: 'https://automation.prettybaked.com/local/camera_snapshot/front_yard_latest.jpg'
+stream_source: rtsp://10.0.50.117:7447/5c3a2dc5e4b0ce282faab0c8_2

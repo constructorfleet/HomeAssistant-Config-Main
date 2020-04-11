@@ -1,0 +1,4 @@
+platform: generic
+name: Driveway Detections
+still_image_url: 'https://automation.prettybaked.com/local/camera_snapshot/front_driveway_latest.jpg'
+stream_source: rtsp://10.0.50.117:7447/5c3a3365e4b0ce282faab166_2

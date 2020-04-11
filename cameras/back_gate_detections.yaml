@@ -1,0 +1,4 @@
+platform: generic
+name: Back Gate Detections
+still_image_url: 'https://automation.prettybaked.com/local/camera_snapshot/back_gate_latest.jpg'
+stream_source: rtsp://10.0.50.117:7447/5d1e99d5e4b0819dd91b1912_2

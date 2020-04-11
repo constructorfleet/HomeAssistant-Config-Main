@@ -1,0 +1,4 @@
+platform: generic
+name: Back Yard Detections
+still_image_url: 'https://automation.prettybaked.com/local/camera_snapshot/back_yard_west_latest.jpg'
+stream_source: rtsp://10.0.50.117:7447/5d378e00e4b06543eb0adb6d_2
