@@ -1,3 +1,0 @@
-platform: local_file
-name: Front Yard Detections
-file_path: '/config/www/camera_snapshot/front_yard_latest.jpg'

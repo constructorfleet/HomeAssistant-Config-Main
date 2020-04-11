@@ -21,8 +21,6 @@ ios:
   push:
     categories: !include_dir_list ios_push_categories
 
-camera: !include_dir_list cameras
-
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes

@@ -1,3 +1,0 @@
-platform: local_file
-name: Back Yard Detections
-file_path: '/config/www/camera_snapshot/back_yard_west_latest.jpg'

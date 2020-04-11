@@ -1,3 +1,0 @@
-platform: local_file
-name: Back Gate Detections
-file_path: '/config/www/camera_snapshot/back_gate_latest.jpg'
