@@ -4,10 +4,8 @@ subscribe_rules_topic: events/rules
 subscribe_state_topic: states/slaves/#
 ignore_event:
   - state_changed
-  - component_loaded
-  - platform_discovered
   - route_registered
 ignore_event_data_patterns:
-  - system_log
+  -0 0
   - mqtt.dump
   - persistent_notification
