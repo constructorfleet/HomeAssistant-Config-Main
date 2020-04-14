@@ -6,6 +6,6 @@ ignore_event:
   - state_changed
   - route_registered
 ignore_event_data_patterns:
-  -0 0
+  - system_log
   - mqtt.dump
   - persistent_notification
