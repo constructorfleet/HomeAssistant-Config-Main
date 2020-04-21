@@ -1,0 +1,79 @@
+title: Heart of Gold
+views:
+  - badges: []
+    cards:
+      - cards:
+          - card:
+              entity: sensor.severe_weather_home
+              type: sensor
+            conditions:
+              - entity: sensor.severe_weather_home
+                state_not: " "
+            type: conditional
+          - cards:
+              - cards:
+                  - format: ddd, MMMM Do YYYY, h:mm a
+                    type: custom:clock-card
+                  - dateBottomFormat: ddd
+                    dateTopFormat: DD
+                    entities:
+                      - entity: calendar.teagan_m_glenn_gmail_com
+                        name: Teagan
+                      - entity: calendar.grace_k_glenn_gmail_com
+                        name: Grace
+                      - entity: calendar.alan_icloud
+                        name: Alan
+                      - entity: calendar.contacts
+                        name: Friends
+                      - entity: calendar.holidays_in_united_states
+                        name: Holidays
+                    hideHeader: true
+                    hideTime: false
+                    numberOfDays: 6
+                    progressBar: true
+                    showEventOrigin: true
+                    showLocation: false
+                    showLocationIcon: false
+                    showMultiDay: true
+                    startFromToday: true
+                    theme: magicmirror
+                    timeFormat: HH:mma
+                    title: Upcoming Events
+                    type: custom:calendar-card
+                type: vertical-stack
+              - cards:
+                  - entity: weather.open_weather_map_5_day
+                    name: This Week
+                    type: weather-forecast
+                  - entities:
+                      - entity: sensor.us_coronavirus_current
+                        name: "# COVID-19"
+                      - entity: sensor.us_coronavirus_deaths
+                        name: "# Deaths"
+                      - entity: sensor.us_coronavirus_recovered
+                        name: "# Recovered"
+                    show_icon: false
+                    show_name: true
+                    theme: magicmirror
+                    type: glance
+                  - entities:
+                      - entity: sensor.co_coronavirus_confirmed
+                        name: 'CO # COVID-19'
+                      - entity: sensor.co_coronavirus_deaths
+                        name: 'CO # Deaths'
+                      - entity: sensor.co_coronavirus_hospitalized
+                        name: 'CO # Hospitalized'
+                    show_icon: false
+                    show_name: true
+                    theme: magicmirror
+                    type: glance
+                  - entity: camera.front_door
+                    type: picture-entity
+                type: vertical-stack
+            type: horizontal-stack
+        type: vertical-stack
+    icon: mdi:mirror
+    panel: true
+    path: mirror
+    theme: magicmirror
+    title: Matic Mirror

@@ -1,0 +1,5 @@
+mode: yaml
+filename: dashboards/mirror.yaml
+title: Mirror
+show_in_sidebar: false
+require_admin: false

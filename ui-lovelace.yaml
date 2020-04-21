@@ -1,0 +1,426 @@
+custom_header:
+  exceptions:
+    - conditions:
+        device_id: 52cac060-20795869
+      config:
+        chevrons: false
+        default_tab: mirror
+        disable_sidebar: true
+        header_css: 'display: none !important;'
+        hidden_tab_redirect: false
+        hide_config: true
+        hide_header: true
+        hide_help: true
+        kiosk_mode: true
+        shadow: false
+title: Heart of Gold
+views:
+  - badges:
+      - entity: binary_sensor.sleepnumber_master_grace_is_in_bed
+      - entity: binary_sensor.sleepnumber_master_teagan_is_in_bed
+    cards: []
+    title: Home
+  - badges: []
+    cards:
+      - cards:
+          - cards:
+              - aspect_ratio: 50%
+                entity: camera.front_yard
+                show_state: false
+                type: picture-entity
+              - aspect_ratio: 50%
+                entity: camera.front_driveway
+                show_state: false
+                type: picture-entity
+            type: horizontal-stack
+          - cards:
+              - aspect_ratio: 50%
+                entity: camera.front_door
+                show_state: false
+                type: picture-entity
+              - aspect_ratio: 50%
+                entity: camera.back_gate
+                show_state: false
+                type: picture-entity
+            type: horizontal-stack
+          - cards:
+              - aspect_ratio: 50%
+                entity: camera.back_yard_west
+                show_state: false
+                type: picture-entity
+            type: horizontal-stack
+        type: vertical-stack
+    icon: mdi:cctv
+    panel: true
+    path: surveillance
+    title: Surveillance
+  - badges: []
+    cards:
+      - entities:
+          - entity: media_player.living_room_apple_tv
+          - entity: media_player.living_room_receiver
+          - entity: remote.living_room_harmony_hub
+          - entity: fan.living_room_ceiling_fan
+          - entity: light.living_room_ceiling_fan_light
+        show_header_toggle: false
+        theme: dark
+        title: Living Room
+        type: entities
+      - entities:
+          - entity: binary_sensor.dining_room_motion
+          - entity: switch.dining_room_ceiling_light
+          - entity: binary_sensor.kitchen_motion
+          - entity: switch.kitchen_light
+        show_header_toggle: false
+        theme: dark
+        title: Dining Room
+        type: entities
+      - entities:
+          - entity: media_player.master_bedroom_tv
+          - entity: light.master_ceiling_fan_light
+          - entity: fan.master_ceiling_fan
+        show_header_toggle: false
+        theme: dark
+        title: Master Bedroom
+        type: entities
+      - entities:
+          - entity: media_player.tripping_room_tv
+          - entity: switch.chill_room_lights
+        show_header_toggle: false
+        theme: dark
+        title: Porch
+        type: entities
+      - entities:
+          - entity: media_player.office_apple_tv
+          - entity: remote.office_harmony_hub
+        show_header_toggle: false
+        theme: dark
+        title: Office
+        type: entities
+    icon: mdi:television
+    path: media
+    theme: dark
+    title: Media
+  - badges:
+      - entity: binary_sensor.interior_garage_door_sensor
+      - entity: binary_sensor.front_door_sensor
+      - entity: binary_sensor.back_door_sensor
+      - entity: binary_sensor.south_living_room_window_1_open
+      - entity: binary_sensor.south_living_room_window_2_open
+      - entity: binary_sensor.east_living_room_window_1_open
+      - entity: binary_sensor.office_window_sensor
+      - entity: binary_sensor.dog_bowl_leak_sensor_dry
+      - entity: binary_sensor.laundry_leak_sensor_dry
+      - entity: binary_sensor.server_leak_sensor_dry
+      - entity: sensor.front_door
+      - entity: sensor.front_yard_detections
+      - entity: sensor.driveway_detections
+    cards:
+      - entities:
+          - entity: lock.front_door
+          - entity: cover.garage_door
+        theme: dark
+        title: Perimeter Defense
+        type: glance
+      - entity: alarm_control_panel.magrathea_alarm
+        states:
+          - arm_home
+          - arm_away
+          - arm_night
+        type: alarm-panel
+    icon: mdi:shield-home
+    theme: dark
+    title: GPS
+  - badges: []
+    cards:
+      - entities:
+          - entity: person.teagan
+          - entity: person.alan
+          - entity: person.persia
+          - entity: person.grace
+          - entity: person.gina
+        show_header_toggle: false
+        theme: dark
+        title: Family
+        type: entities
+      - entities:
+          - entity: device_tracker.patrick
+          - entity: device_tracker.rhema
+          - entity: device_tracker.care
+          - entity: device_tracker.colby
+          - entity: device_tracker.seb
+        show_header_toggle: false
+        theme: dark
+        title: Friends
+        type: entities
+      - entities:
+          - entity: device_tracker.2011_subaru_impreza_wagon
+          - entity: device_tracker.2015_jeep_cherokee
+          - entity: device_tracker.2019_jeep_compass
+        show_header_toggle: false
+        theme: dark
+        title: Vehicles
+        type: entities
+    icon: mdi:account-group-outline
+    theme: dark
+    title: Presence
+  - badges: []
+    cards:
+      - entities:
+          - entity: sensor.kitchen_luminance
+          - entity: binary_sensor.kitchen_motion
+          - entity: switch.kitchen_light
+          - entity: sensor.dining_room_luminance
+          - entity: binary_sensor.dining_room_motion
+          - entity: switch.dining_room_ceiling_light
+        show_header_toggle: false
+        theme: dark
+        title: Kitchen/Dining
+        type: entities
+      - entities:
+          - entity: sensor.upper_landing_luminance
+          - entity: binary_sensor.upper_landing_motion
+          - entity: switch.upper_landing
+          - entity: sensor.lower_stairs_luminance
+          - entity: binary_sensor.lower_stairs_motion
+          - entity: switch.lower_hall_light
+          - entity: sensor.basement_stairs_luminance
+          - entity: sensor.bottom_basement_stairs_luminance
+          - entity: binary_sensor.basement_stairs_motion
+          - entity: binary_sensor.bottom_basement_stairs_motion
+          - entity: switch.basement_stair_light
+        show_header_toggle: false
+        theme: dark
+        title: Stairwells
+        type: entities
+      - entities:
+          - entity: light.entry_light
+          - entity: switch.living_room_ceiling_light
+          - entity: switch.master_ceiling_light
+          - entity: switch.persia_ceiling_light
+          - entity: switch.chill_room_lights
+        show_header_toggle: false
+        theme: dark
+        title: Rooms
+        type: entities
+      - entities:
+          - entity: sensor.laundry_room_luminance
+          - entity: sensor.server_rack_luminance
+          - entity: binary_sensor.laundry_room_motion
+          - entity: binary_sensor.server_rack_motion
+          - entity: switch.laundry_room_lights
+        show_header_toggle: false
+        theme: dark
+        title: Basement
+        type: entities
+      - entities:
+          - entity: sensor.garage_sensor_1_luminance
+          - entity: sensor.garage_sensor_2_luminance
+          - entity: binary_sensor.garage_motion_sensor_1
+          - entity: binary_sensor.garage_motion_sensor_2
+          - entity: switch.garage_light
+        show_header_toggle: false
+        theme: dark
+        title: Garage
+        type: entities
+    icon: mdi:lightbulb
+    theme: dark
+    title: Lighting
+  - badges: []
+    cards:
+      - cards:
+          - card:
+              entity: sensor.severe_weather_home
+              type: sensor
+            conditions:
+              - entity: sensor.severe_weather_home
+                state_not: " "
+            type: conditional
+          - cards:
+              - cards:
+                  - format: ddd, MMMM Do YYYY, h:mm a
+                    type: custom:clock-card
+                  - dateBottomFormat: ddd
+                    dateTopFormat: DD
+                    entities:
+                      - entity: calendar.teagan_m_glenn_gmail_com
+                        name: Teagan
+                      - entity: calendar.grace_k_glenn_gmail_com
+                        name: Grace
+                      - entity: calendar.alan_icloud
+                        name: Alan
+                      - entity: calendar.contacts
+                        name: Friends
+                      - entity: calendar.holidays_in_united_states
+                        name: Holidays
+                    hideHeader: true
+                    hideTime: false
+                    numberOfDays: 6
+                    progressBar: true
+                    showEventOrigin: true
+                    showLocation: false
+                    showLocationIcon: false
+                    showMultiDay: true
+                    startFromToday: true
+                    theme: magicmirror
+                    timeFormat: HH:mma
+                    title: Upcoming Events
+                    type: custom:calendar-card
+                type: vertical-stack
+              - cards:
+                  - entity: weather.open_weather_map_5_day
+                    name: This Week
+                    type: weather-forecast
+                  - entities:
+                      - entity: sensor.us_coronavirus_current
+                        name: "# COVID-19"
+                      - entity: sensor.us_coronavirus_deaths
+                        name: "# Deaths"
+                      - entity: sensor.us_coronavirus_recovered
+                        name: "# Recovered"
+                    show_icon: false
+                    show_name: true
+                    theme: magicmirror
+                    type: glance
+                  - entities:
+                      - entity: sensor.co_coronavirus_confirmed
+                        name: 'CO # COVID-19'
+                      - entity: sensor.co_coronavirus_deaths
+                        name: 'CO # Deaths'
+                      - entity: sensor.co_coronavirus_hospitalized
+                        name: 'CO # Hospitalized'
+                    show_icon: false
+                    show_name: true
+                    theme: magicmirror
+                    type: glance
+                  - entity: camera.front_door
+                    type: picture-entity
+                type: vertical-stack
+            type: horizontal-stack
+        type: vertical-stack
+    icon: mdi:auto-fix
+    panel: true
+    path: mirror
+    theme: magicmirror
+    title: Matic Mirror
+  - badges:
+      - entity: sensor.plex_shockwave
+    cards:
+      - type: iframe
+        url: https://stats.prettybaked.com/d-solo/zEYEzlSZk/media-services-overview?orgId=1&refresh=30s&var-datasource=InfluxDB-Varken&var-telegrafdatasource=influx-telegraf&var-host=shockwave&var-container=plex&var-movielibrary=Movies&var-4kmovielibrary=4K%20Movies&var-tvlibrary=TV%20Shows&var-4ktvlibrary=TV%20Shows&var-topstreamtype=Direct%20Play&var-topstreamtype=Direct%20Stream&var-topstreamtype=Transcode&var-totalsessions=1394&var-plexuser_timeframe=$__auto_interval_plexuser_timeframe&var-plexstream_timeframe=1M&panelId=34"
+      - type: iframe
+        url: https://stats.prettybaked.com/d-solo/zEYEzlSZk/media-services-overview?orgId=1&refresh=30s&var-datasource=InfluxDB-Varken&var-telegrafdatasource=influx-telegraf&var-host=shockwave&var-container=plex&var-movielibrary=Movies&var-4kmovielibrary=4K%20Movies&var-tvlibrary=TV%20Shows&var-4ktvlibrary=TV%20Shows&var-topstreamtype=Direct%20Play&var-topstreamtype=Direct%20Stream&var-topstreamtype=Transcode&var-totalsessions=1394&var-plexuser_timeframe=$__auto_interval_plexuser_timeframe&var-plexstream_timeframe=1M&panelId=22
+    icon: mdi:cast-connected
+    path: plex
+    theme: dark
+    title: Plex
+  - badges: []
+    cards:
+      - entities:
+          - entity: sensor.us_coronavirus_current
+            name: "# Currrent"
+          - entity: sensor.us_coronavirus_deaths
+            name: "# Deaths"
+          - entity: sensor.us_coronavirus_recovered
+            name: "# Recovered"
+        show_icon: false
+        show_name: true
+        theme: dark
+        title: COVID-19
+        type: glance
+      - back:
+          service: remote.send_command
+          service_data:
+            command: Back
+            device: Apple TV
+            entity_id: remote.living_room_2
+        down:
+          service: remote.send_command
+          service_data:
+            command: DirectionDown
+            device: Apple TV
+            entity_id: remote.living_room_2
+        entity: media_player.living_room_apple_tv
+        forward:
+          service: remote.send_command
+          service_data:
+            command: FastForward
+            device: Apple TV
+            entity_id: remote.living_room_2
+        home:
+          service: remote.send_command
+          service_data:
+            command: Home
+            device: Apple TV
+            entity_id: remote.living_room_2
+        left:
+          service: remote.send_command
+          service_data:
+            command: DirectionLeft
+            device: Apple TV
+            entity_id: remote.living_room_2
+        mute:
+          service: remote.send_command
+          service_data:
+            command: Mute
+            device: Denon AV Receiver
+            entity_id: remote.living_room_2
+        name: Living Room Media
+        pause:
+          service: remote.send_command
+          service_data:
+            command: Pause
+            device: Apple TV
+            entity_id: remote.living_room_2
+        play:
+          service: remote.send_command
+          service_data:
+            command: Play
+            device: Apple TV
+            entity_id: remote.living_room_2
+        power:
+          service: remote.turn_off
+          service_data:
+            entity_id: remote.living_room_2
+        remote: remote.living_room_2
+        reverse:
+          service: remote.send_command
+          service_data:
+            command: Rewind
+            device: Apple TV
+            entity_id: remote.living_room_2
+        right:
+          service: remote.send_command
+          service_data:
+            command: DirectionRight
+            device: Apple TV
+            entity_id: remote.living_room_2
+        select:
+          service: remote.send_command
+          service_data:
+            command: Select
+            device: Apple TV
+            entity_id: remote.living_room_2
+        tv: true
+        type: custom:tv-card
+        up:
+          service: remote.send_command
+          service_data:
+            command: DirectionUp
+            device: Apple TV
+            entity_id: remote.living_room_2
+        volume_down:
+          service: remote.send_command
+          service_data:
+            command: VolumeDown
+            device: Denon AV Receiver
+            entity_id: remote.living_room_2
+        volume_up:
+          service: remote.send_command
+          service_data:
+            command: VolumeUp
+            device: Denon AV Receiver
+            entity_id: remote.living_room_2
+    path: debug
+    theme: dark
+    title: Debug

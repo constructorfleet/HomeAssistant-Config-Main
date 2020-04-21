@@ -28,6 +28,11 @@ frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
 
+lovelace:
+  mode: yaml
+  resources: !include lovelace_resources.yaml
+  dashboards: !include_dir_named lovelace_dashboards
+
 http:
   base_url: https://automation.prettybaked.com
   cors_allowed_origins:
