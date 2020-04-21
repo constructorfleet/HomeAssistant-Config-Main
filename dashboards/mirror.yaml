@@ -1,3 +1,17 @@
+exceptions:
+  - conditions:
+      device_id: 52cac060-20795869
+    config:
+      chevrons: false
+      default_tab: mirror
+      disable_sidebar: true
+      header_css: 'display: none !important;'
+      hidden_tab_redirect: false
+      hide_config: true
+      hide_header: true
+      hide_help: true
+      kiosk_mode: true
+      shadow: false
 title: Heart of Gold
 views:
   - badges: []
