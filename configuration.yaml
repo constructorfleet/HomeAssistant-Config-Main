@@ -89,7 +89,7 @@ homekit:
       - cover
       - sensor
       - binary_sensor
-    include_entries:
+    include_entities:
       - media_player.living_room_apple_tv
       - media_player.office_apple_tv
     exclude_domains:
