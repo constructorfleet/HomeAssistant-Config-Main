@@ -92,6 +92,7 @@ homekit:
     include_entities:
       - media_player.living_room_apple_tv
       - media_player.office_apple_tv
+      - image_processing.doods_front_door
     exclude_domains:
       - fans
       - person
