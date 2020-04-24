@@ -76,7 +76,7 @@ vacuum:
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
-
+zeroconf:
 homekit:
-  advertise_ip: 10.0.10.89
+  ip_address: 10.0.10.89
   safe_mode: true
