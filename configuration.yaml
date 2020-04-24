@@ -74,6 +74,18 @@ alarm_control_panel:
 vacuum:
 # ENDHACK
 
+binary_sensor:
+  - platforrm: template
+    sensors:
+      someone_at_door:
+        friendly_name: Someone is at the front door
+        device_class: presence
+        entity_id: 
+          - image_processing.doods_front_door
+        value_template: '{{ ( states.image_processing.doods_front_door.state | int ) > 0 }}'
+
+
+
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
 zeroconf:
