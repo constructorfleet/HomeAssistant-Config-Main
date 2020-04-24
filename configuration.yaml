@@ -78,3 +78,5 @@ mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
 
 homekit:
+  advertise_ip: 10.0.10.89
+  safe_mode: true
