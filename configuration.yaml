@@ -76,3 +76,5 @@ vacuum:
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
+
+homekit:
