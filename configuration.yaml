@@ -78,4 +78,20 @@ mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
 zeroconf:
 homekit:
+  advertise_ip: 10.0.10.89
   safe_mode: true
+  filter:
+    include_domains:
+      - alarm_control_panel
+      - light
+      - switch
+      - lock
+      - cover
+      - sensor
+      - binary_sensor
+    include_entries:
+      - media_player.living_room_apple_tv
+      - media_player.office_apple_tv
+    exclude_domains:
+      - fans
+      - person
