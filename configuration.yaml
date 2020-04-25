@@ -75,7 +75,7 @@ vacuum:
 # ENDHACK
 
 binary_sensor:
-  - platforrm: template
+  - platform: template
     sensors:
       someone_at_door:
         friendly_name: Someone is at the front door
