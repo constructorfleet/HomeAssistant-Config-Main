@@ -35,11 +35,11 @@ filter:
     - cover
     - sensor
     - binary_sensor
-    - climate
     - person
   include_entities:
     - media_player.living_room_apple_tv
     - media_player.office_apple_tv
+    - climate.thermostat
   exclude_domains:
     - device_tracker
   exclude_entities:
