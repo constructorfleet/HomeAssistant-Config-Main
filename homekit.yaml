@@ -26,6 +26,14 @@ entity_config:
       name: Basement Stairs Light
     switch.upper_landing:
       name: Upper Landing Light
+    switch.coop:
+      type: outlet
+    switch.coop_water_heater:
+      type: outlet
+    switch.office_entry_outlet:
+      type: outlet
+    switch.office_entry_outlet_bottom:
+      type: outlet
 filter:
   include_domains:
     - alarm_control_panel
@@ -71,5 +79,7 @@ filter:
     - switch.basement_stair_light
     - switch.garage_light_2
     - switch.garage_light_switch
+    - switch.porch_lights
     - light.toggle_movie_mode
+    - person.admin
     
