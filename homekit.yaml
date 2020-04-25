@@ -1,7 +1,6 @@
 advertise_ip: 10.0.10.89
 safe_mode: true
-filter:
-  entity_config:
+entity_config:
     binary_sensor.south_living_room_window_1_open:
       linked_battery_sensor: sensor.south_living_room_window_1_battery
       name: Living Room Window 1
@@ -27,7 +26,7 @@ filter:
       name: Basement Stairs Light
     switch.upper_landing:
       name: Upper Landing Light
-
+filter:
   include_domains:
     - alarm_control_panel
     - light
