@@ -1,0 +1,74 @@
+advertise_ip: 10.0.10.89
+safe_mode: true
+filter:
+  entity_config:
+    binary_sensor.south_living_room_window_1_open:
+      linked_battery_sensor: sensor.south_living_room_window_1_battery
+      name: Living Room Window 1
+    binary_sensor.south_living_room_window_2_open:
+      linked_battery_sensor: sensor.south_living_room_window_2_battery
+      name: Living Room Window 2
+    binary_sensor.east_living_room_window_1_open:
+      linked_battery_sensor: sensor.east_living_room_window_sensor_1_battery
+      name: Living Room Window 3
+    cover.garage_door:
+      name: Garage Door
+    sensor.garage_sensor_1_temperature:
+      name: Garage Temp 1
+    sensor.garage_sensor_2_temperature:
+      name: Garage Temp 2
+    switch.laundry_room_lights:
+      name: Laundry Room Lights
+    switch.lower_floor_schedule:
+      name: Lower Vacuum Schedule
+    switch.main_floor_schedule:
+      name: Main Vacuum Schedule
+    switch.basement_stairs:
+      name: Basement Stairs Light
+    switch.upper_landing:
+      name: Upper Landing Light
+
+  include_domains:
+    - alarm_control_panel
+    - light
+    - switch
+    - lock
+    - cover
+    - sensor
+    - binary_sensor
+    - climate
+    - person
+  include_entities:
+    - media_player.living_room_apple_tv
+    - media_player.office_apple_tv
+  exclude_domains:
+    - device_tracker
+  exclude_entities:
+    - binary_sensor.aeon_labs_zw100_multisensor_6_sensor_3
+    - binary_sensor.aeon_labs_zw100_multisensor_6_sensor
+    - binary_sensor.dog_bowl_leak_sensor_heartbea
+    - binary_sensor.laundry_leak_sensor_heartbeat
+    - binary_sensor.server_leak_sensor_heartbeat
+    - sensor.sleepnumber_master_grace_sleepnumber
+    - sensor.sleepnumber_master_teagan_sleepnumber
+    - sensor.sleepnumber_teagan_grace_sleepnumber
+    - sensor.sleepnumber_teagan_teagan_sleepnumber
+    - sensor.office_window_sensor
+    - light.master_ceiling_fan_light
+    - light.persia_ceiling_fan_light
+    # - light.living_room_ceiling_fan_light
+    - lock.schlage_allegion_be469_touchscreen_deadbolt_locked
+    - switch.dryer
+    - switch.washer
+    - switch.lower_hall_switch_1
+    - switch.lower_hall_switch_2
+    - switch.upper_landing_switch_1
+    - switch.upper_landing_switch_2
+    - switch.upper_landing_light
+    - switch.basement_stair_switch_1
+    - switch.basement_stair_switch_2
+    - switch.basement_stair_light
+    - switch.garage_light_2
+    - switch.garage_light_switch
+    - light.toggle_movie_mode
+    

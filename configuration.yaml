@@ -74,37 +74,10 @@ alarm_control_panel:
 vacuum:
 # ENDHACK
 
-binary_sensor:
-  - platform: template
-    sensors:
-      someone_at_door:
-        friendly_name: Someone is at the front door
-        device_class: presence
-        entity_id: 
-          - image_processing.doods_front_door
-        value_template: '{{ ( states.image_processing.doods_front_door.state | int ) > 0 }}'
-
+binary_sensor: !include_dir_list binary_sensors
 
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
 zeroconf:
-homekit:
-  advertise_ip: 10.0.10.89
-  safe_mode: true
-  filter:
-    include_domains:
-      - alarm_control_panel
-      - light
-      - switch
-      - lock
-      - cover
-      - sensor
-      - binary_sensor
-    include_entities:
-      - media_player.living_room_apple_tv
-      - media_player.office_apple_tv
-      - image_processing.doods_front_door
-    exclude_domains:
-      - fans
-      - person
+homekit: !include homekit.yaml
