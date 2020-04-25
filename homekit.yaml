@@ -48,6 +48,8 @@ filter:
     - binary_sensor.dog_bowl_leak_sensor_heartbea
     - binary_sensor.laundry_leak_sensor_heartbeat
     - binary_sensor.server_leak_sensor_heartbeat
+    - binary_sensor.sleepnumber_teagan_grace_is_in_bed
+    - binary_sensor.sleepnumber_teagan_teagan_is_in_bed
     - sensor.sleepnumber_master_grace_sleepnumber
     - sensor.sleepnumber_master_teagan_sleepnumber
     - sensor.sleepnumber_teagan_grace_sleepnumber
