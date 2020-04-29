@@ -189,7 +189,7 @@ views:
           - entity: sensor.bottom_basement_stairs_luminance
           - entity: binary_sensor.basement_stairs_motion
           - entity: binary_sensor.bottom_basement_stairs_motion
-          - entity: switch.basement_stairs_light
+          - entity: switch.basement_stairs
         show_header_toggle: false
         theme: dark
         title: Stairwells
