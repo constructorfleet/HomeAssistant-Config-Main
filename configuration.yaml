@@ -71,6 +71,7 @@ person:
 fan:
 media_player:
 alarm_control_panel:
+input_boolean:
 vacuum:
 # ENDHACK
 
