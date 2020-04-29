@@ -61,7 +61,7 @@ views:
           - entity: media_player.living_room_receiver
           - entity: remote.living_room_harmony_hub
           - entity: fan.living_room_ceiling_fan
-          - entity: light.living_room_ceiling_fan_light
+          - entity: switch.living_room_ceiling_light
           - entity: input_boolean.enable_movie_mode
         show_header_toggle: false
         theme: dark
@@ -189,7 +189,7 @@ views:
           - entity: sensor.bottom_basement_stairs_luminance
           - entity: binary_sensor.basement_stairs_motion
           - entity: binary_sensor.bottom_basement_stairs_motion
-          - entity: switch.basement_stair_light
+          - entity: switch.basement_stairs_light
         show_header_toggle: false
         theme: dark
         title: Stairwells
