@@ -7,9 +7,6 @@ homeassistant:
   name: Heart of Gold
   customize: !include customize.yaml
   auth_providers:
-    - type: trusted_networks
-      trusted_networks:
-        - 127.0.0.1
     - type: homeassistant
     - type: command_line
       name: LDAP
