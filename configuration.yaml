@@ -43,9 +43,9 @@ panel_custom: !include_dir_list custom_panels
 
 dominos: !include dominos.yaml
 
-recorder: !include recorder.yaml
+# recorder: !include recorder.yaml
 
-influxdb: !include influx_db.yaml
+# influxdb: !include influx_db.yaml
 
 history:
 
