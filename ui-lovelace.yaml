@@ -62,6 +62,7 @@ views:
           - entity: remote.living_room_harmony_hub
           - entity: fan.living_room_ceiling_fan
           - entity: light.living_room_ceiling_fan_light
+          - entity: input_boolean.enable_movie_mode
         show_header_toggle: false
         theme: dark
         title: Living Room
