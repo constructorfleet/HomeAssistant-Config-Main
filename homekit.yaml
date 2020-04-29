@@ -83,4 +83,6 @@ filter:
     - switch.porch_lights
     - light.toggle_movie_mode
     - person.admin
+    - switch.movie_mode
+    - light.toggle_movie_mode
     
