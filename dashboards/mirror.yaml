@@ -1,6 +1,6 @@
 exceptions:
   - conditions:
-      user: maykar
+      user: magicmirror
     config:
       chevrons: false
       disable_sidebar: true
