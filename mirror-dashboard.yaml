@@ -1,16 +1,14 @@
-exceptions:
-  - conditions:
-      user: magicmirror
-    config:
-      chevrons: false
-      disable_sidebar: true
-      header_css: 'display: none !important;'
-      hidden_tab_redirect: false
-      hide_config: true
-      hide_header: true
-      hide_help: true
-      kiosk_mode: true
-      shadow: false
+custom_header:
+  kiosk_mode: true
+  disable_sidebar: true
+  hide_header: true
+  hide_help: true
+  hide_unused: true
+  hide_refresh: true
+  hide_reload_resources: true
+  hide_config: true
+  hide_raw: true
+  hide_ch_settings: true
 title: Magic Mirror
 views:
   - badges: []
