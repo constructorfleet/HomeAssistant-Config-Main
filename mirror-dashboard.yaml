@@ -1,9 +1,8 @@
 custom_header:
   exceptions:
     - conditions:
-        user: magicmirror
+        user: 33e12b3953664cad893517b45c683a53
       config:
-        query_string: display-panel
         kiosk_mode: true
         disable_sidebar: true
         hide_header: true
@@ -15,7 +14,6 @@ custom_header:
         hide_config: true
         hide_raw: true
         hide_ch_settings: true
-title: Magic Mirror
 views:
   - badges: []
     cards:
@@ -89,7 +87,6 @@ views:
                 type: vertical-stack
             type: horizontal-stack
         type: vertical-stack
-    icon: mdi:mirror
     panel: true
     path: mirror
     theme: magicmirror
