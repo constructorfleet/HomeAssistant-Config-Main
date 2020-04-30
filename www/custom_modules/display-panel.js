@@ -11,7 +11,7 @@ if (window.location.href.indexOf('display-panel') > 0) {
                     return;
                 }
                 // Poll 2 minutes
-                setTimeout(window.pollServer, 120000);
+                setTimeout(window.pollServer, 3000);
             }
         };
         request.send();
