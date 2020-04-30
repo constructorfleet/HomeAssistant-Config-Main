@@ -21,6 +21,7 @@ views:
           - card:
               entity: sensor.severe_weather_home
               type: sensor
+              theme: magicmirror
             conditions:
               - entity: sensor.severe_weather_home
                 state_not: " "
@@ -29,6 +30,7 @@ views:
               - cards:
                   - format: ddd, MMMM Do YYYY, h:mm a
                     type: custom:clock-card
+                    theme: magicmirror
                   - dateBottomFormat: ddd
                     dateTopFormat: DD
                     entities:
@@ -60,6 +62,7 @@ views:
                   - entity: weather.open_weather_map_5_day
                     name: This Week
                     type: weather-forecast
+                    theme: magicmirror
                   - entities:
                       - entity: sensor.us_coronavirus_current
                         name: "# COVID-19"
@@ -84,6 +87,7 @@ views:
                     type: glance
                   - entity: camera.front_door
                     type: picture-entity
+                    theme: magicmirror
                 type: vertical-stack
             type: horizontal-stack
         type: vertical-stack
