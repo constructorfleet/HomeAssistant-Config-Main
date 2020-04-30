@@ -1,14 +1,18 @@
 custom_header:
-  kiosk_mode: true
-  disable_sidebar: true
-  hide_header: true
-  hide_help: true
-  hide_unused: true
-  hide_refresh: true
-  hide_reload_resources: true
-  hide_config: true
-  hide_raw: true
-  hide_ch_settings: true
+  exception:
+    - conditions:
+        user: magicmirror
+      config:
+        kiosk_mode: true
+        disable_sidebar: true
+        hide_header: true
+        hide_help: true
+        hide_unused: true
+        hide_refresh: true
+        hide_reload_resources: true
+        hide_config: true
+        hide_raw: true
+        hide_ch_settings: true
 title: Magic Mirror
 views:
   - badges: []
