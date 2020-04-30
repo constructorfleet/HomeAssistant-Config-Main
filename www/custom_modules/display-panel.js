@@ -7,7 +7,7 @@ if (window.location.href.indexOf('display-panel') > 0) {
                 if (request.status === 200 
                     || request.status === 401 
                     || request.status === 403) {  
-                    self.location.reload();
+                    window.location.reload();
                     return;
                 }
                 // Poll 2 minutes

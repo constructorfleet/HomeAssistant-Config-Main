@@ -17,4 +17,4 @@
 - type: module
   url: /local/community/lovelace-card-mod/card-mod.js
 - type: js
-  url: /local/custom_modules/display-panel.js?v=1
+  url: /local/custom_modules/display-panel.js?v=2
