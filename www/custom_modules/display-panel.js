@@ -4,14 +4,12 @@ if (window.location.href.indexOf('display-panel') > 0) {
         request.open('GET', self.location, true);
         request.onreadystatechange = function(){
             if (request.readyState === XMLHttpRequest.DONE){
-                if (request.status === 200 
-                    || request.status === 401 
-                    || request.status === 403) {  
+                if (request.status === 200) {  
                     window.location.reload();
                     return;
                 }
                 // Poll 2 minutes
-                setTimeout(window.pollServer, 3000);
+                setTimeout(window.pollServer, 300);
             }
         };
         request.send();
@@ -20,7 +18,7 @@ if (window.location.href.indexOf('display-panel') > 0) {
         try {
             if (!(self || {}).hassConnection) {
                 // Retry connection every 30s
-                setTimeout(window.tryConnection, 30000);
+                setTimeout(window.tryConnection, 1000);
                 return;
             }
 
