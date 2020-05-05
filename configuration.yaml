@@ -52,11 +52,6 @@ config:
 
 api_proxy: !include api_proxy.yaml
 
-logger:
-  default: info
-  logs:
-    homeassistant.components.mobile_app: debug
-
 # BEGINHACK
 # Prevents issue with servie not found for remote instance
 light:
