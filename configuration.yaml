@@ -79,5 +79,4 @@ binary_sensor: !include_dir_list binary_sensors
 
 mqtt: !include mqtt.yaml
 mqtteventstream: !include eventstream.yaml
-zeroconf:
 homekit: !include homekit.yaml
