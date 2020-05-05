@@ -1,7 +1,0 @@
-name: Someone is at the front door
-identifier: presencepersondetected
-actions:
-   - title: Lock
-     identifier: actionlock
-   - title: Unlock
-     identifier: actionunlock

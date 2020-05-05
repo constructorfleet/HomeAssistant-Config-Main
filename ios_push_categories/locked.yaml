@@ -1,5 +1,0 @@
-name: Door Locked
-identifier: securitylocked
-actions:
-  - identifier: actionunlock
-    title: Unlock

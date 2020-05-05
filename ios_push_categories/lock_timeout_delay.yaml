@@ -1,7 +1,0 @@
-name: Door Lock Delayed
-identifier: securitylocktimeoutdelay
-actions:
-  - identifier: actiontimeoutdelayacknowledge
-    title: Acknowledge
-  - identifier: actiontimeoutdelaysilence
-    title: Silence Temporarily

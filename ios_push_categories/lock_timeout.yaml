@@ -1,5 +1,0 @@
-name: Door Locked
-identifier: securitylocktimeout
-actions:
-  - identifier: actionunlock
-    title: Unlock
