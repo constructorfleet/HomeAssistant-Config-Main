@@ -62,7 +62,7 @@ views:
           - entity: remote.living_room_harmony_hub
           - entity: fan.living_room_ceiling_fan
           - entity: switch.living_room_ceiling_light
-          - entity: input_boolean.enable_movie_mode
+          - entity: input_boolean.movie_mode
         show_header_toggle: false
         theme: dark
         title: Living Room
@@ -106,16 +106,19 @@ views:
       - entity: binary_sensor.interior_garage_door_sensor
       - entity: binary_sensor.front_door_sensor
       - entity: binary_sensor.back_door_sensor
-      - entity: binary_sensor.south_living_room_window_1_open
-      - entity: binary_sensor.south_living_room_window_2_open
-      - entity: binary_sensor.east_living_room_window_1_open
+      - entity: binary_sensor.living_room_east_window_left_open
+      - entity: binary_sensor.living_room_east_window_right_open
+      - entity: binary_sensor.living_room_south_window_left_open
+      - entity: binary_sensor.living_room_south_window_right_open
       - entity: binary_sensor.office_window_sensor
       - entity: binary_sensor.dog_bowl_leak_sensor_dry
       - entity: binary_sensor.laundry_leak_sensor_dry
       - entity: binary_sensor.server_leak_sensor_dry
-      - entity: sensor.front_door
-      - entity: sensor.front_yard_detections
-      - entity: sensor.driveway_detections
+      - entity: image_processing.doods_back_gate
+      - entity: image_processing.doods_back_yard_west
+      - entity: image_processing.doods_front_door
+      - entity: image_processing.doods_front_driveway
+      - entity: image_processing.doods_front_yard
     cards:
       - entities:
           - entity: lock.front_door
