@@ -46,8 +46,6 @@ filter:
     - person
     - fan
   include_entities:
-    - media_player.living_room_apple_tv
-    - media_player.office_apple_tv
     - media_player.living_room_receiver
     - climate.thermostat
     - input_boolean.movie_mode
