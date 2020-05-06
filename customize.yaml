@@ -20,5 +20,11 @@ binary_sensor.interior_garage_door_sensor:
   device_class: door
 binary_sensor.front_door_sensor:
   device_class: door
+media_player.living_room_receiver:
+  device_class: speaker
+media_player.office_apple_tv:
+  device_class: tv
+media_player.living_room_apple_tv:
+  device_class: tv
 
 
