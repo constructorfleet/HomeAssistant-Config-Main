@@ -18,3 +18,5 @@
   url: /local/community/lovelace-card-mod/card-mod.js
 - type: js
   url: /local/custom_modules/display-panel.js?v=3
+- type: module
+  url: /local/custom_modules/surveillance-card.js?v=1
