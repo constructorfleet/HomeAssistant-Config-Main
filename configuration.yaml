@@ -67,6 +67,7 @@ media_player:
 alarm_control_panel:
 input_boolean:
 vacuum:
+remote:
 # ENDHACK
 
 binary_sensor: !include_dir_list binary_sensors
