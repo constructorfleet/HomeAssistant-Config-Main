@@ -247,7 +247,7 @@ views:
                   - dateBottomFormat: ddd
                     dateTopFormat: DD
                     entities:
-                      - entity: calendar.teagan_m_glenn_gmail_com
+                      - entity: calendar.teagan_icloud
                         name: Teagan
                       - entity: calendar.grace_k_glenn_gmail_com
                         name: Grace
