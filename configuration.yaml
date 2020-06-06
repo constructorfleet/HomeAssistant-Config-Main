@@ -48,6 +48,7 @@ map:
 config:
 
 api_proxy: !include api_proxy.yaml
+input_boolean: !include_dir_named input_booleans
 
 # BEGINHACK
 # Prevents issue with servie not found for remote instance
@@ -62,7 +63,6 @@ person:
 fan:
 media_player:
 alarm_control_panel:
-input_boolean:
 vacuum:
 remote:
 mobile_app:

@@ -1,0 +1,12 @@
+alias: Set Instance Flag
+trigger:
+  platform: event
+  event_type: instance_state.connected
+condition:
+  condition: template
+  value_template: "{{ 'instance_{{ trigger.event.data }}_connected' in states.input_boolean }}"
+action:
+  service: input_boolean.turn_on
+  data_template:
+    entity_id: "input_boolean.instance_{{ trigger.event.data }}_connected"
+

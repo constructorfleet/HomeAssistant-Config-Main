@@ -1,5 +1,6 @@
 advertise_ip: 10.0.10.89
 safe_mode: true
+auto_start: false
 entity_config:
     binary_sensor.south_living_room_window_1_open:
       linked_battery_sensor: sensor.south_living_room_window_1_battery
