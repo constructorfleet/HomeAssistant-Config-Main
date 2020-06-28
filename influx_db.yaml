@@ -1,7 +1,0 @@
-host: !secret influx_host
-port: !secret influx_port
-database: !secret influx_database
-default_measurement: state
-tags:
-  instance: prod
-  source: hass

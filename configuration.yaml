@@ -15,29 +15,12 @@ homeassistant:
       args: 
         - /config/ldap-auth.cfg
 
-# Notifications
-notify: !include_dir_list notifiers
-automation: !include_dir_list automations
-
 frontend:
   javascript_version: auto
   themes: !include_dir_named frontend/themes
 
-lovelace:
-  mode: yaml
-  resources: !include lovelace_resources.yaml
-  dashboards: !include_dir_named lovelace_dashboards
-
 http:
   base_url: http://homebridge-iot.home.prettybaked.com:8123
-
-panel_custom: !include_dir_list custom_panels
-
-recorder: !include recorder.yaml
-
-influxdb: !include influx_db.yaml
-
-history:
 
 config:
 
