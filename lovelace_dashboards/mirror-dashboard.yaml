@@ -1,5 +1,0 @@
-mode: yaml
-filename: mirror-dashboard.yaml
-title: Mirror
-show_in_sidebar: false
-require_admin: false
