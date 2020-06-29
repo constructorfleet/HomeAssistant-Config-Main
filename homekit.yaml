@@ -45,6 +45,17 @@ filter:
     - fan.master_ceiling_fan
     - fan.persia_ceiling_fan
     - input_boolean.movie_mode
+    - input_boolean.basement_stair_light_timeout
+    - input_boolean.dining_room_light_timeout
+    - input_boolean.front_door_lock_timeout
+    - input_boolean.garage_door_timeout
+    - input_boolean.garage_light_timeout
+    - input_boolean.hue_lights_timeout
+    - input_boolean.kitchen_light_timeout
+    - input_boolean.laundry_light_timeout
+    - input_boolean.lower_bathroom_fan_timeout
+    - input_boolean.lower_hall_light_timeout
+    - input_boolean.upper_landing_hall_light_timeout
     - lock.front_door
     # - cover.garage_door
 
