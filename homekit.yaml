@@ -13,6 +13,7 @@ entity_config:
       name: Living Room Window 3
     binary_sensor.living_room_south_window_right_open:
       linked_battery_sensor: sensor.living_room_south_window_right_battery_level
+      name: Living Room Window 4
     
 filter:
   include_entities:
