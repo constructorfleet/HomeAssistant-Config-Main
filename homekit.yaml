@@ -23,7 +23,7 @@ filter:
     - switch.upper_landing
     - switch.kitchen_light
     - switch.dining_room_ceiling_light
-    - switch.switch.basement_stairs_light
+    - switch.basement_stairs_light
     - switch.garage_light
     - switch.master_ceiling_light
     - switch.laundry_room_lights
