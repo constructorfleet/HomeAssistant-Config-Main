@@ -25,6 +25,7 @@ filter:
     - switch.dining_room_ceiling_light
     - switch.switch.basement_stairs_light
     - switch.garage_light
+    - switch.master_ceiling_light
     - switch.laundry_room_lights
     - switch.living_room_ceiling_light
     - switch.washer
@@ -36,11 +37,6 @@ filter:
     - binary_sensor.living_room_east_window_right_open 
     - binary_sensor.living_room_south_window_left_open
     - binary_sensor.living_room_south_window_right_open
-    - media_player.living_room_receiver
-    - media_player.gaming_tv
-    - media_player.living_room_tv
-    - media_player.master_bedroom_tv
-    - media_player.office_tv
     - climate.thermostat
     - fan.living_room_ceiling_fan
     - fan.master_ceiling_fan
