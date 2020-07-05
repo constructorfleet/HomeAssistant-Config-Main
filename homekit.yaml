@@ -54,6 +54,5 @@ filter:
     - input_boolean.lower_hall_light_timeout
     - input_boolean.upper_landing_hall_light_timeout
     - lock.front_door
-    # - cover.garage_door
 
     
