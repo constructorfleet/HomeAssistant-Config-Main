@@ -55,5 +55,6 @@ filter:
     - input_boolean.upper_landing_hall_light_timeout
     - lock.front_door
     - media_player.living_room_receiver
+    - light.living_room_ceiling_light
 
     
