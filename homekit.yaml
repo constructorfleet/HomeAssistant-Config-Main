@@ -56,6 +56,6 @@ filter:
     - lock.front_door
     - media_player.living_room_receiver
     - light.living_room_ceiling_light
-    - switch.master_ceiling_light
+    - light.master_ceiling_light
 
     
