@@ -17,19 +17,12 @@ entity_config:
     
 filter:
   include_entities:
-    - light.entry_light
-    - switch.lower_hall_light
     - switch.lower_bathroom_fan
-    - switch.upper_landing
     - switch.kitchen_light
     - switch.dining_room_ceiling_light
     - switch.basement_stairs_light
     - switch.garage_light
-    - switch.master_ceiling_light
     - switch.laundry_room_lights
-    - switch.living_room_ceiling_light
-    - switch.washer
-    - switch.dryer
     - switch.doorbell
     - binary_sensor.dog_bowl_leak_sensor_dry
     - binary_sensor.laundry_room_leak_sensor_dry
@@ -54,8 +47,6 @@ filter:
     - input_boolean.lower_hall_light_timeout
     - input_boolean.upper_landing_hall_light_timeout
     - lock.front_door
-    - media_player.living_room_receiver
-    - light.living_room_ceiling_light
-    - light.master_ceiling_light
+    - cover.garage_door
 
     
