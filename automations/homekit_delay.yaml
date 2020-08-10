@@ -1,0 +1,7 @@
+alias: 'Delay Start HomeKit'
+trigger:
+  - platform: homeassistant
+    event: start
+action:
+  - delay: 00:02  # Waits 5 minutes
+  - service: homekit.start

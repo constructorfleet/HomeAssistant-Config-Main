@@ -5,7 +5,9 @@ subscribe_state_topic: states/slaves/#
 ignore_event:
   - state_changed
   - route_registered
+  - homeassistant_start
 ignore_event_data_patterns:
   - system_log
   - mqtt.dump
   - persistent_notification
+  - start

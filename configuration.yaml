@@ -25,6 +25,7 @@ http:
 config:
 
 api_proxy: !include api_proxy.yaml
+automation: !include_dir_list automations
 
 # BEGINHACK
 # Prevents issue with servie not found for remote instance
