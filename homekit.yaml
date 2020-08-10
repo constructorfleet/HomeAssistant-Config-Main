@@ -26,6 +26,8 @@ filter:
     - switch.doorbell
     - switch.living_room_hue_sync_music
     - switch.living_room_hue_sync_video
+    - switch.master_bedroom_hue_sync_music
+    - switch.master_bedroom_hue_sync_video
     - input_boolean.enable_living_room_sync
     - binary_sensor.dog_bowl_leak_sensor_dry
     - binary_sensor.laundry_room_leak_sensor_dry
